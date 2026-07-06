@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-white border-t border-brand-grey/20 pt-16 pb-8 px-6 mt-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
         <div>
-          <h3 className="font-heading font-bold text-brand-primary text-2xl mb-4">ICARO</h3>
+          <h3 className="font-heading font-bold text-brand-primary text-2xl mb-4">Icaro.</h3>
           <p className="font-sans text-brand-black/70 text-sm max-w-xs">
             Soluzioni add-on intelligenti per mitigare l'effetto isola di calore urbana, riqualificando l'arredo esistente.
           </p>
