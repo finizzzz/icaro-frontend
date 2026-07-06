@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import Gallery from '../components/Gallery';
 
 export default function Home() {
   return (
@@ -65,7 +66,7 @@ export default function Home() {
       </motion.section>
       
 {/* 2. PROBLEMATICA */}
-<section id="problema" className="py-24 px-6 md:px-16 bg-brand-sand/10">
+<section id="problema" className="py-24 px-6 md:px-16 bg-brand-sand/30">
         <div className="max-w-6xl mx-auto">
           
           {/* PRETITOLO: Spostato fuori dalla griglia, sta sopra a tutto per fare da "Etichetta" */}
@@ -199,15 +200,15 @@ export default function Home() {
         </div>
       </section>
 
-{/* 3.5 VARIANTI DI PROGETTO - Versione Statica e Pulita */}
+{/* {/* 3.5 VARIANTI DI PROGETTO - Versione Interattiva */}
 <section id="varianti" className="py-24 px-6 md:px-16 bg-[#F9F9F9] border-t border-brand-grey/10">
   <div className="max-w-6xl mx-auto">
     
     <div className="text-center mb-16">
-      <h2 className="font-heading font-bold text-4xl md:text-5xl text-brand-dark mb-4">
+      <h2 className="font-heading font-bold text-4xl md:text-5xl text-brand-black mb-4">
         Due soluzioni, una visione.
       </h2>
-      <p className="font-sans text-brand-primary text-base md:text-lg max-w-2xl mx-auto">
+      <p className="font-sans text-brand-grey text-base md:text-lg max-w-2xl mx-auto">
         Icaro è un'infrastruttura democratica, progettata per adattarsi organicamente alle diverse esigenze e morfologie urbane.
       </p>
     </div>
@@ -215,28 +216,28 @@ export default function Home() {
     <div className="grid md:grid-cols-2 gap-10">
       
       {/* CARD 1: ADD-ON */}
-      <div className="group rounded-3xl bg-white border border-brand-primary/20 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+      <div className="group rounded-3xl bg-white border border-brand-primary/20 hover:bg-brand-primary/70 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
         <div className="aspect-[16/9] bg-brand-primary/10 flex items-center justify-center relative overflow-hidden">
-          <span className="font-mono text-brand-primary/60 text-sm font-bold tracking-widest">RENDER VARIANTE ADD-ON</span>
+          <span className="font-mono text-brand-primary/60 group-hover:text-white/60 text-sm font-bold tracking-widest">RENDER VARIANTE ADD-ON</span>
         </div>
         
         <div className="p-8 md:p-10 flex-grow flex flex-col">
-          <div className="text-brand-primary font-mono mb-2 text-sm font-bold uppercase tracking-widest">Modulo Universale</div>
-          <h3 className="font-heading font-bold text-3xl text-brand-dark mb-4">Versione Add-on</h3>
-          <p className="font-sans text-brand-dark/80 text-sm leading-relaxed mb-6 flex-grow text-justify">
+          <div className="text-brand-primary group-hover:text-white/50 font-mono mb-2 text-sm font-bold uppercase tracking-widest transition-colors">Modulo Universale</div>
+          <h3 className="font-heading font-bold text-3xl text-brand-dark group-hover:text-white mb-4 transition-colors">Versione Add-on</h3>
+          <p className="font-sans text-brand-dark group-hover:text-white/80 text-sm leading-relaxed mb-6 flex-grow text-justify transition-colors">
             Progettata per il retrofitting intelligente. Si aggancia alle sedute urbane preesistenti, riattivandole senza demolizioni.
           </p>
-          <ul className="font-sans text-sm text-brand-dark/90 space-y-3">
+          <ul className="font-sans text-sm text-brand-primary group-hover:text-white/90 space-y-3 transition-colors">
             <li className="flex items-center gap-3">
-              <span className="text-white bg-brand-primary rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs">✓</span> 
+              <span className="text-white bg-brand-dark group-hover:bg-white group-hover:text-brand-primary rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs transition-colors">✓</span> 
               <span>Riutilizzo di zone preesistenti</span>
             </li>
             <li className="flex items-center gap-3">
-              <span className="text-white bg-brand-primary rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs">✓</span> 
+              <span className="text-white bg-brand-dark group-hover:bg-white group-hover:text-brand-primary rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs transition-colors">✓</span> 
               <span>Minima spesa, massima resa</span>
             </li>
             <li className="flex items-center gap-3">
-              <span className="text-white bg-brand-primary rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs">✓</span> 
+              <span className="text-white bg-brand-dark group-hover:bg-white group-hover:text-brand-primary rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs transition-colors">✓</span> 
               <span>Estetica minimalista personalizzabile</span>
             </li>
           </ul>
@@ -244,28 +245,28 @@ export default function Home() {
       </div>
 
       {/* CARD 2: STAND-ALONE */}
-      <div className="group rounded-3xl bg-white border border-brand-primary/20 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+      <div className="group rounded-3xl bg-white border border-brand-primary/20 hover:bg-brand-primary/70 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
         <div className="aspect-[16/9] bg-brand-dark/5 flex items-center justify-center relative overflow-hidden">
-          <span className="font-mono text-brand-dark/60 text-sm font-bold tracking-widest">RENDER VARIANTE AUTONOMA</span>
+          <span className="font-mono text-brand-dark/60 group-hover:text-white/60 text-sm font-bold tracking-widest">RENDER VARIANTE AUTONOMA</span>
         </div>
         
         <div className="p-8 md:p-10 flex-grow flex flex-col">
-          <div className="text-brand-dark font-mono mb-2 text-sm font-bold uppercase tracking-widest">Sistema Completo</div>
-          <h3 className="font-heading font-bold text-3xl text-brand-dark mb-4">Versione Autonoma</h3>
-          <p className="font-sans text-brand-dark/80 text-sm leading-relaxed mb-6 flex-grow text-justify">
+          <div className="text-brand-primary group-hover:text-white/50 font-mono mb-2 text-sm font-bold uppercase tracking-widest transition-colors">Sistema Completo</div>
+          <h3 className="font-heading font-bold text-3xl text-brand-dark group-hover:text-white mb-4 transition-colors">Versione Autonoma</h3>
+          <p className="font-sans text-brand-dark group-hover:text-white/80 text-sm leading-relaxed mb-6 flex-grow text-justify transition-colors">
             Concepita per l'installazione ex-novo. Porta il comfort climatico e una seduta integrata in piazze e parchi sprovvisti di arredo.
           </p>
-          <ul className="font-sans text-sm text-brand-dark/90 space-y-3">
+          <ul className="font-sans text-sm text-brand-primary group-hover:text-white/90 space-y-3 transition-colors">
             <li className="flex items-center gap-3">
-              <span className="text-white bg-brand-dark rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs">✓</span> 
+              <span className="text-white bg-brand-dark group-hover:bg-white group-hover:text-brand-primary rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs transition-colors">✓</span> 
               <span>Panca integrata a incastro</span>
             </li>
             <li className="flex items-center gap-3">
-              <span className="text-white bg-brand-dark rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs">✓</span> 
+              <span className="text-white bg-brand-dark group-hover:bg-white group-hover:text-brand-primary rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs transition-colors">✓</span> 
               <span>Ideale per nuove aree urbane</span>
             </li>
             <li className="flex items-center gap-3">
-              <span className="text-white bg-brand-dark rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs">✓</span> 
+              <span className="text-white bg-brand-dark group-hover:bg-white group-hover:text-brand-primary rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs">✓</span> 
               <span>Varie tipologie di seduta</span>
             </li>
           </ul>
@@ -276,57 +277,59 @@ export default function Home() {
   </div>
 </section>
       
-      {/* 4. MODELLO 3D */}
-      <section id="modello3d" className="py-24 px-6 bg-brand-sand/10">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="font-heading font-bold text-4xl text-brand-black mb-6">Esplora ICARO in 3D</h2>
-          <p className="font-sans text-brand-black/70 mb-12 max-w-2xl mx-auto">Interagisci con il modello per scoprire i materiali e i giunti meccanici.</p>
-          <div className="w-full h-[500px] bg-white rounded-3xl border border-brand-grey/20 shadow-sm flex items-center justify-center">
-            <div className="text-center">
-              <div className="animate-spin w-10 h-10 border-4 border-brand-primary border-t-transparent rounded-full mx-auto mb-4"></div>
-              <p className="font-mono text-brand-primary font-bold">Caricamento Viewer 3D...</p>
-            </div>
-          </div>
-        </div>
-      </section>
+     {/* 4. MODELLO 3D */}
+<section id="funzionamento" className="py-24 px-6 bg-brand-sand/30">
+  <div className="max-w-5xl mx-auto">
+    
+    <div className="text-center mb-16">
+      <h2 className="font-heading font-bold text-4xl md:text-5xl text-brand-dark mb-6">
+        Meccanismo e Funzionamento.
+      </h2>
+      <p className="font-sans text-brand-primary text-base md:text-lg max-w-2xl mx-auto">
+        Scopri l'intuitività del sistema: un gesto semplice per inseguire la traiettoria solare durante tutto l'arco della giornata.
+      </p>
+    </div>
 
-      {/* 5. GALLERY */}
-      <section id="gallery" className="py-24 px-6 bg-white overflow-hidden">
-        <div className="max-w-6xl mx-auto mb-12">
-          <h2 className="font-heading font-bold text-4xl text-brand-black">Galleria</h2>
-          <p className="font-mono text-brand-grey mt-2 uppercase text-sm font-bold">Prototipi e Render di Icaro</p>
-        </div>
-        <div className="flex gap-6 overflow-x-auto pb-8 px-6 max-w-[1400px] mx-auto snap-x scrollbar-hide">
-          {[1, 2, 3, 4, 5].map((item) => (
-            <div key={item} className="min-w-[300px] md:min-w-[450px] aspect-[4/3] bg-gray-50 rounded-2xl flex-shrink-0 snap-center flex items-center justify-center border border-brand-grey/20 shadow-sm">
-              <p className="font-mono text-brand-grey">Render {item}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+    {/* Contenitore Video */}
+    <div className="relative w-full aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl border border-brand-grey/10 group mb-10">
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+      >
+        <source src="/video-movimento-icaro.mp4" type="video/mp4" />
+      </video>
+      
+      <div className="absolute inset-0 bg-brand-dark/10 transition-opacity duration-300 group-hover:opacity-0"></div>
+    </div>
 
-      {/* 6. ABOUT US */}
-      <section id="about" className="py-24 px-6 bg-brand-sand/10">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-heading font-bold text-4xl text-brand-black mb-6">About Us</h2>
-          <p className="font-sans text-brand-black/80 text-lg leading-relaxed">
-            Siamo un team di designer e progettisti con una visione chiara: migliorare la vivibilità delle nostre città attraverso soluzioni intelligenti e sostenibili. Il progetto Icaro nasce dall'esigenza di adattare l'infrastruttura esistente alle nuove sfide climatiche.
-          </p>
-        </div>
-      </section>
 
-      {/* 7. CALL TO ACTION FINALE */}
-      <section id="contatti" className="py-32 px-6 bg-brand-primary relative">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-6">Pronto a riqualificare i tuoi spazi?</h2>
-          <p className="font-sans text-white/90 text-lg mb-10 max-w-xl mx-auto font-medium">
-            Contattaci per una consulenza tecnica gratuita o per richiedere la scheda tecnica dettagliata del progetto Icaro.
-          </p>
-          <a href="mailto:filippo.cola@edu.unife.it" className="inline-block bg-white text-brand-primary px-10 py-4 rounded-full font-sans font-bold hover:bg-gray-50 transition-colors shadow-lg">
-            Scrivici Ora
-          </a>
-        </div>
-      </section>
+  </div>
+</section>
+
+<Gallery/>
+
+
+{/* 6. ABOUT ME */}
+<section id="about" className="py-24 px-6 bg-white">
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="font-heading font-bold text-4xl text-brand-black mb-6">
+      About Me
+    </h2>
+    <p className="font-sans text-brand-black/80 text-lg leading-relaxed mb-10">
+      Sono un designer e progettista con una visione chiara: migliorare la vivibilità delle nostre città attraverso soluzioni intelligenti e sostenibili. Il progetto Icaro nasce dalla mia esigenza di adattare l'infrastruttura esistente alle nuove sfide climatiche.
+    </p>
+    
+    <a 
+      href="/chi-sono" 
+      className="bg-brand-primary text-white px-8 py-3 rounded-full font-bold text-sm shadow-lg transition-all duration-300 hover:scale-110 hover:bg-brand-dark inline-block"
+    >
+      Scopri il mio percorso
+    </a>
+  </div>
+</section>
 
     </main>
   );

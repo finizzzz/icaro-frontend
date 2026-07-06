@@ -31,7 +31,7 @@ export default function Navbar() {
             <a href="#problema" className="hover:text-white/80 transition-colors">Il Problema</a>
             <a href="#progetto" className="hover:text-white/80 transition-colors">Il Progetto</a>
             <a href="#gallery" className="hover:text-white/80 transition-colors">Galleria</a>
-            <a href="#about" className="hover:text-white/80 transition-colors">About Us</a>
+            <a href="#about" className="hover:text-white/80 transition-colors">About Me</a>
           </div>
           
           <a href="#contatti" className="bg-white text-brand-primary px-5 py-2 rounded-full font-sans font-bold text-sm transition-all duration-300 hover:scale-110 hover:shadow-md">
