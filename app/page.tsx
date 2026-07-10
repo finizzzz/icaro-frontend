@@ -1,33 +1,51 @@
 "use client";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import Gallery from '../components/Gallery';
+import Footer from "../components/Footer";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
 export default function Home() {
+
+  // ---> 2. INCOLLA QUESTA LOGICA QUI (dentro Home, prima del return) <---
+  const [animationKey, setAnimationKey] = useState(0);
+  const previousTimeRef = useRef(0);
+
+  const handleTimeUpdate = (e: any) => {
+    const currentTime = e.currentTarget.currentTime;
+    if (currentTime < previousTimeRef.current - 0.5) {
+      setAnimationKey((prev) => prev + 1); 
+    }
+    previousTimeRef.current = currentTime;
+  };
+  // ---> FINE LOGICA <---
   return (
-    <main>
+<main>
       {/* 1. HERO SECTION: SOLO VIDEO */}
       <section className="h-screen w-full relative bg-black">
-      <video
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="absolute inset-0 w-full h-full object-cover z-0"
->
-  {/* Assicurati di cambiare il nome del file se lo hai rallentato */}
-  <source src="/video cutted.mp4" type="video/mp4" />
-</video>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          style={{ transform: "translateZ(0)" }}
+        >
+          <source src="/video-cutted.mp4" type="video/mp4" />
+        </video>
+        
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/40 to-transparent"></div>
       </section>
 
 {/* 2. BLOCCO TESTI: Dissolvenza lineare dal basso e testo centrato */}
 <motion.section 
-        initial={{ opacity: 0, y: 150 }} // Parte invisibile e spostato 40px in basso
+        initial={{ opacity: 0, y: 100 }} // Parte invisibile e spostato 40px in basso
         whileInView={{ opacity: 1, y: 0 }} // Arriva visibile nella posizione originale
         transition={{ 
-            duration: 0.7, 
+            duration: 0.3, 
             ease: "linear" 
         }}
         viewport={{ 
@@ -56,7 +74,7 @@ export default function Home() {
             </Link>
             
             <Link 
-              href="#contatti" 
+              href="#footer" 
               className="border-2 border-brand-primary bg-transparent text-brand-primary px-8 py-3 rounded-full font-bold text-sm transition-all duration-300 hover:scale-110 hover:bg-white hover:text-brand-dark hover:border-white hover:shadow-xl"
             >
               Contattaci
@@ -200,7 +218,7 @@ export default function Home() {
         </div>
       </section>
 
-{/* {/* 3.5 VARIANTI DI PROGETTO - Versione Interattiva */}
+{/* 3.5 VARIANTI DI PROGETTO - Versione Interattiva */}
 <section id="varianti" className="py-24 px-6 md:px-16 bg-[#F9F9F9] border-t border-brand-grey/10">
   <div className="max-w-6xl mx-auto">
     
@@ -218,7 +236,13 @@ export default function Home() {
       {/* CARD 1: ADD-ON */}
       <div className="group rounded-3xl bg-white border border-brand-primary/20 hover:bg-brand-primary/70 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
         <div className="aspect-[16/9] bg-brand-primary/10 flex items-center justify-center relative overflow-hidden">
-          <span className="font-mono text-brand-primary/60 group-hover:text-white/60 text-sm font-bold tracking-widest">RENDER VARIANTE ADD-ON</span>
+          {/* IMMAGINE INSERITA QUI */}
+          <Image 
+            src="/add-on-new.png" 
+            alt="Render Variante Add-on" 
+            fill 
+            className="object-cover transition-transform duration-500 group-hover:scale-105" 
+          />
         </div>
         
         <div className="p-8 md:p-10 flex-grow flex flex-col">
@@ -247,7 +271,13 @@ export default function Home() {
       {/* CARD 2: STAND-ALONE */}
       <div className="group rounded-3xl bg-white border border-brand-primary/20 hover:bg-brand-primary/70 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
         <div className="aspect-[16/9] bg-brand-dark/5 flex items-center justify-center relative overflow-hidden">
-          <span className="font-mono text-brand-dark/60 group-hover:text-white/60 text-sm font-bold tracking-widest">RENDER VARIANTE AUTONOMA</span>
+          {/* IMMAGINE INSERITA QUI */}
+          <Image 
+            src="/alone-new.png" 
+            alt="Render Variante Autonoma" 
+            fill 
+            className="object-cover transition-transform duration-500 group-hover:scale-105" 
+          />
         </div>
         
         <div className="p-8 md:p-10 flex-grow flex flex-col">
@@ -266,7 +296,7 @@ export default function Home() {
               <span>Ideale per nuove aree urbane</span>
             </li>
             <li className="flex items-center gap-3">
-              <span className="text-white bg-brand-dark group-hover:bg-white group-hover:text-brand-primary rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs">✓</span> 
+              <span className="text-white bg-brand-dark group-hover:bg-white group-hover:text-brand-primary rounded-full min-w-[20px] w-5 h-5 flex items-center justify-center text-xs transition-colors">✓</span> 
               <span>Varie tipologie di seduta</span>
             </li>
           </ul>
@@ -277,36 +307,92 @@ export default function Home() {
   </div>
 </section>
       
-     {/* 4. MODELLO 3D */}
-<section id="funzionamento" className="py-24 px-6 bg-brand-sand/30">
-  <div className="max-w-5xl mx-auto">
-    
-    <div className="text-center mb-16">
-      <h2 className="font-heading font-bold text-4xl md:text-5xl text-brand-dark mb-6">
-        Meccanismo e Funzionamento.
-      </h2>
-      <p className="font-sans text-brand-primary text-base md:text-lg max-w-2xl mx-auto">
-        Scopri l'intuitività del sistema: un gesto semplice per inseguire la traiettoria solare durante tutto l'arco della giornata.
-      </p>
-    </div>
 
-    {/* Contenitore Video */}
-    <div className="relative w-full aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl border border-brand-grey/10 group mb-10">
-      <video 
-        autoPlay 
-        loop 
-        muted 
-        playsInline 
-        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+<section className="relative w-full max-w-[1920px] mx-auto aspect-video bg-neutral-900 flex items-center justify-center overflow-hidden">
+  
+  {/* --- VIDEO PURO OTTIMIZZATO --- */}
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    preload="auto"
+    onTimeUpdate={handleTimeUpdate} 
+    className="absolute inset-0 w-full h-full object-cover opacity-100" 
+    style={{ transform: "translateZ(0)" }}
+  >
+    <source src="/video-movimento-cut.mp4" type="video/mp4" />
+  </video>
+
+  {/* --- TESTO CENTRALE ANIMATO CON KEYFRAMES --- */}
+  <motion.div 
+    key={animationKey} 
+    className="relative z-10 max-w-4xl mx-auto px-6 text-center pointer-events-none"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: [0, 1, 1, 0] }}
+    transition={{ 
+      duration: 2, 
+      times: [0, 0.2, 0.7, 1],
+      ease: "easeInOut" 
+    }}
+  >
+    <h1 className="font-heading font-bold text-4xl md:text-5xl text-[#08594A] mb-4 drop-shadow-lg">
+      L'ombra che segue il sole.
+    </h1>
+  </motion.div>
+
+{/* --- PULSANTE ESPANDIBILE CON TEXT REVEAL ANIMATO --- */}
+<div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20">
+  <motion.div
+    initial="initial"
+    whileHover="hover"
+    animate="initial"
+    className="flex items-center justify-center"
+  >
+    {/* 1. Trasformiamo il Link in un componente motion */}
+    <Link href="/progetto" passHref>
+      <motion.div
+        variants={{
+          initial: { width: "56px", paddingRight: "0px", backgroundColor: "#ffffff" },
+          /* Modificato il colore di sfondo in hover (verde scuro) e calibrata la larghezza a 200px */
+          hover: { width: "200px", paddingRight: "10px", backgroundColor: "#08594A", boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.3)" }
+        }}
+        transition={{ type: "spring", stiffness: 200, damping: 22 }}
+        /* Aggiunta la classe 'group' per comunicare l'hover ai figli */
+        className="group h-14 flex items-center rounded-full overflow-hidden relative cursor-pointer shadow-lg select-none transition-colors duration-300"
       >
-        <source src="/video-movimento-icaro.mp4" type="video/mp4" />
-      </video>
-      
-      <div className="absolute inset-0 bg-brand-dark/10 transition-opacity duration-300 group-hover:opacity-0"></div>
-    </div>
+        {/* 2. CERCHIO/ICONA: Rimane sempre fisso a sinistra */}
+        {/* Aggiunto group-hover:text-white per farla diventare bianca */}
+        <div className="w-14 h-14 min-w-[56px] flex items-center justify-center text-[#08594A] group-hover:text-white transition-colors duration-300">
+          <ArrowRight size={24} />
+        </div>
 
-
-  </div>
+        {/* 3. TESTO REVEAL: Scomposto in singole lettere animate a cascata */}
+        {/* Aggiunto flex-1 e justify-center per l'allineamento perfetto, e group-hover per il testo bianco */}
+        <div className="flex-1 flex justify-center font-sans font-bold text-xs tracking-widest uppercase text-[#08594A] group-hover:text-white transition-colors duration-300 whitespace-nowrap pointer-events-none">
+          {"SCOPRI DI PIÙ".split("").map((letter, index) => (
+            <motion.span
+              key={index}
+              variants={{
+                initial: { opacity: 0, x: -10, width: letter === " " ? "6px" : "auto" },
+                hover: { opacity: 1, x: 0, width: letter === " " ? "6px" : "auto" }
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 15,
+                delay: index * 0.03 // <-- Crea il magico effetto cascata (dalla prima all'ultima lettera)
+              }}
+              className="inline-block"
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </div>
+      </motion.div>
+    </Link>
+  </motion.div>
+</div>
 </section>
 
 <Gallery/>
@@ -323,13 +409,13 @@ export default function Home() {
     </p>
     
     <a 
-      href="/chi-sono" 
+      href="/about-me" 
       className="bg-brand-primary text-white px-8 py-3 rounded-full font-bold text-sm shadow-lg transition-all duration-300 hover:scale-110 hover:bg-brand-dark inline-block"
     >
       Scopri il mio percorso
     </a>
-  </div>
-</section>
+    </div>
+  </section>
 
     </main>
   );

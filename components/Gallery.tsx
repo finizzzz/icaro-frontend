@@ -2,17 +2,26 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image"; // <-- Aggiunto l'import vitale per le immagini
 
 export default function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [1, 2, 3, 4, 5, 6];
+  
+  // 1. Inseriti i percorsi esatti dei tuoi file PNG
+  const images = [
+    "/new-1.png",
+    "/new-2.png",
+    "/new-3.png",
+    "/new-4.png",
+    "/new-5.png",
+    "/new-6.png"
+  ];
 
   const next = () => setCurrentIndex((prev) => (prev + 1) % images.length);
   const prev = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
 
   return (
-    <section id="gallery" className="py-24 bg-brand-dark overflow-hidden relative">
-      {/* Aumentato il margine inferiore del blocco titolo da mb-16 a mb-24 */}
+    <section id="gallery" className="py-24 bg-[#08594A] overflow-hidden relative">
       <div className="max-w-6xl mx-auto px-6 mb-24">
         <p className="font-mono text-white/90 tracking-[0.2em] text-xs font-bold uppercase mb-8">
           GALLERY
@@ -22,7 +31,6 @@ export default function Gallery() {
         </h2>
       </div>
 
-      {/* Aggiunto un leggero padding superiore (pt-12) al contenitore per distanziare meglio */}
       <div className="relative flex items-center justify-center h-[500px] pt-12">
         {/* Frecce di navigazione */}
         <button 
@@ -59,9 +67,17 @@ export default function Gallery() {
                   filter: isCenter ? "blur(0px)" : "blur(4px)"
                 }}
                 transition={{ type: "spring", stiffness: 150, damping: 20 }}
-                className="absolute w-[500px] h-[350px] bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center overflow-hidden shadow-2xl"
+                className="absolute w-[500px] h-[350px] bg-black/20 rounded-3xl border border-white/10 flex items-center justify-center overflow-hidden shadow-2xl"
               >
-                <span className="text-white/20 font-mono text-lg">Render {img}</span>
+              {/* 2. Il componente Image potenziato per la massima qualità */}
+              <Image
+                  src={img}
+                  alt={`Render progetto Icaro ${i + 1}`}
+                  fill
+                  quality={100} /* <-- 1. Disattiva la compressione, massima qualità */
+                  sizes="(max-width: 1200px) 100vw, 1200px" /* <-- 2. Forza Next.js a caricare un file grande */
+                  className="object-cover"
+                />
               </motion.div>
             );
           })}
