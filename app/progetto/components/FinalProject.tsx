@@ -1,28 +1,58 @@
+"use client";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+
 export default function FinalProject() {
-    return (
-      <section className="py-24 px-6 md:px-16 bg-neutral-50 text-brand-black">
-        <div className="max-w-4xl mx-auto">
-          <p className="font-mono text-[#08594A]/70 tracking-[0.2em] text-xs font-bold uppercase mb-3 text-center">
-            08. IL PROGETTO FINALE
-          </p>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-12 text-center max-w-xl mx-auto">
-            Icaro: La soluzione pronta per la città.
-          </h2>
-          <p className="font-sans text-lg leading-relaxed mb-16 opacity-80 text-center max-w-2xl mx-auto">
-            Aggiungi qui una descrizione conclusiva del progetto finale. Sottolinea i risultati ottenuti, i benefici attesi e la visione futura del progetto. Mostra i tuoi render finali e ravvicinati per dare un'idea concreta di Icaro in azione.
-          </p>
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="w-full aspect-video bg-neutral-100 rounded-3xl border border-neutral-200 flex items-center justify-center font-mono text-neutral-400">
-              [RENDER FINALE 1]
-            </div>
-            <div className="w-full aspect-video bg-neutral-100 rounded-3xl border border-neutral-200 flex items-center justify-center font-mono text-neutral-400">
-              [RENDER FINALE 2]
-            </div>
-          </div>
-          <div className="w-full aspect-[2/1] bg-neutral-100 rounded-3xl border border-neutral-200 flex items-center justify-center font-mono text-neutral-400">
-            [RENDER FINALE 3 / PANORAMICO]
-          </div>
-        </div>
-      </section>
-    );
-  }
+  const sectionRef = useRef<HTMLElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"]
+  });
+
+  // Il parallasse rimane: muove l'immagine in modo fluido
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
+
+  return (
+    /* 
+      1. IL CONTENITORE PADRE
+      overflow-hidden è vitale qui: taglia via tutto ciò che esce dallo schermo. 
+      Senza questo, il testo gigante creerebbe lo scroll orizzontale!
+    */
+    <section ref={sectionRef} id="final-render" className="relative h-screen w-full overflow-hidden bg-black">
+      
+      {/* 2. L'IMMAGINE DI BACKGROUND (Render) */}
+      <motion.div 
+        style={{ y: backgroundY }}
+        className="absolute inset-0 w-full h-full scale-125 z-[1]"
+      >
+        <Image 
+          src="/render-contestuale.jpg" // Assicurati che il nome sia corretto
+          alt="Parasole pubblico installato su panchina" 
+          fill 
+          className="object-cover opacity-80" // opacity-80 incupisce leggermente la foto
+          unoptimized 
+        />
+      </motion.div>
+
+      {/* 3. IL TESTO "BLEEDING" GIGANTE IN ALTO */}
+      {/* 
+        absolute top-12: Lo fissa in alto.
+        left-1/2 -translate-x-1/2: È la formula matematica per centrare perfettamente un oggetto in modo assoluto. 
+      */}
+      <div className="absolute top-0 md:top-0 left-1/2 -translate-x-1/2 z-0 pointer-events-none flex justify-center w-full">
+        
+        {/* 
+          text-[15vw]: Il font è grande il 15% della larghezza totale dello schermo.
+          whitespace-nowrap: Vieta di andare a capo.
+        */}
+        <h2 className="font-heading font-black uppercase text-[12vw] md:text-[10vw] leading-none text-white whitespace-nowrap drop-shadow-1xl tracking-tighter">
+          ICAROICAROICAROICAROICARO
+        </h2>
+        
+      </div>
+
+    </section>
+  );
+}

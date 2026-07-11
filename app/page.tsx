@@ -6,6 +6,7 @@ import Image from "next/image";
 import Gallery from '../components/Gallery';
 import Footer from "../components/Footer";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 export default function Home() {
 
@@ -106,16 +107,19 @@ export default function Home() {
                 Le recenti ondate di calore trasformano le città in trappole termiche (Urban Heat Island). Gli arredi urbani convenzionali, costantemente esposti all'irraggiamento solare, diventano superfici roventi e inagibili. Questo "lockdown climatico" colpisce duramente le fasce di popolazione più vulnerabili, come anziani, bambini e soggetti con patologie pregresse. Icaro interviene esattamente in questi vuoti infrastrutturali, istituendo zone di decompressione termica sicure e democratiche per ripristinare la vivibilità dello spazio pubblico.
               </p>
               
-              <Link 
-                href="https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 bg-brand-primary text-white px-6 py-3 rounded-full font-sans font-bold text-sm shadow-lg transition-all duration-300 hover:bg-brand-dark hover:scale-110 text-center inline-block"
-              >
-                Approfondisci il problema
-              </Link>
-              
-            </div>
+        {/* 4. IL PULSANTE ESTERNO (Link all'OMS) */}
+        <a 
+          href="https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-3 bg-[#08594A] text-white px-8 py-4 rounded-full font-sans font-bold text-sm transition-all duration-300 hover:scale-105 hover:bg-brand-black hover:shadow-xl"
+        >
+          <span>Report OMS: Calore e Salute</span>
+          {/* L'icona si muove in alto a destra quando passi il mouse (grazie alla classe group) */}
+          <ExternalLink size={18} className="group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
+        </a>
+
+        </div> {/* CHIUSURA 3° SCATOLA (Colonna Testo) */}
             
 {/* CORREZIONE IMMAGINE */}
 <div className="relative w-full h-[300px] md:h-full rounded-3xl border border-brand-grey/20 overflow-hidden shadow-sm">

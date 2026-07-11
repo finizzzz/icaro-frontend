@@ -39,7 +39,7 @@ export default function Navbar() {
             <Link href="/#gallery" className="hover:text-white/80 transition-colors">Galleria</Link>
             
             {/* 5. Rimanda alla pagina About (uso /chi-sono basandomi sui tuoi screen precedenti) */}
-            <Link href="/chi-sono" className="hover:text-white/80 transition-colors">About Me</Link>
+            <Link href="/about-me" className="hover:text-white/80 transition-colors">About Me</Link>
           </div>
           
           {/* Il footer è condiviso in tutte le pagine, quindi basta #footer per scendere in fondo a prescindere da dove ci si trovi */}

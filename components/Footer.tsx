@@ -7,8 +7,8 @@ export default function Footer() {
   return (
     // bg-neutral-900 crea un grigio molto scuro, quasi nero.
     // text-neutral-300 rende il testo chiaro per contrasto.
-    <footer id="footer" className="bg-neutral-900 border-t border-neutral-800 pt-16 pb-8 px-6 mt-20 text-neutral-300">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+    <footer id="footer" className="bg-neutral-900 border-t border-neutral-800 pt-16 pb-8 px-6 text-neutral-300">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 mb-12">
         
         {/* Colonna 1: Branding */}
         <div>

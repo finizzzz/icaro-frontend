@@ -23,8 +23,6 @@ export default function AboutMe() {
         </div>
       </section>
 
-      {/* 3. IL TUO FOOTER */}
-      <Footer />
     </main>
   );
 }
