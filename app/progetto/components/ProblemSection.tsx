@@ -21,7 +21,7 @@ export default function ProblemSection() {
   const txt1Opacity = useTransform(scrollYProgress, [0, 0.05, 0.20, 0.25], [0, 1, 1, 0]);
   
   // SCENA 2: (Da 25% a 60% dello scroll) - ALLINEAMENTO PERFETTO
-  const img2Opacity = useTransform(scrollYProgress, [0.25, 0.35, 1, 1], [0, 1, 1, 1]); // Copre tutto per sempre
+  const img2Opacity = useTransform(scrollYProgress, [0.25, 0.35, 0.55, 0.60], [0, 1, 1, 1]); // Copre tutto per sempre
   const txt2Opacity = useTransform(scrollYProgress, [0.25, 0.35, 0.55, 0.60], [0, 1, 1, 0]); // Entra insieme alla foto 2
   
   // SCENA 3: (Da 60% alla fine) - ALLINEAMENTO PERFETTO
@@ -41,7 +41,7 @@ export default function ProblemSection() {
   const txtY = useTransform(scrollYProgress, [0, 1], [40, -40]); 
 
   return (
-    <section ref={containerRef} id="problema" className="relative h-[1000vh] bg-black text-white">
+    <section ref={containerRef} id="problema" className="relative h-[600vh] bg-black text-white">
       
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         
@@ -77,7 +77,7 @@ export default function ProblemSection() {
               L'Isola di Calore.
             </h2>
             {/* Paragrafo giustificato */}
-            <p className="font-sans text-xl md:text-xl leading-relaxed text-white drop-shadow-lg text-justify hyphens-auto w-full">
+            <p className="font-sans text-xl md:text-xl leading-relaxed text-white drop-shadow-lg text-justify w-full">
               L'asfalto incamera radiazione solare. Le panchine esistenti, esposte al sole zenitale, raggiungono temperature superficiali critiche, rendendo lo spazio pubblico fisicamente inabitabile.
             </p>
           </motion.div>
@@ -106,7 +106,7 @@ export default function ProblemSection() {
             <h2 className="font-heading font-bold text-4xl md:text-6xl mb-6 text-white text-center">
               Un'infrastruttura democratica.
             </h2>
-            <p className="font-sans text-lg md:text-xl leading-relaxed text-white drop-shadow-lg text-justify hyphens-auto w-full">
+            <p className="font-sans text-lg md:text-xl leading-relaxed text-white drop-shadow-lg text-center w-full">
               Generare un'ombra mirata abbatte la temperatura percepita. Riqualificare una seduta rovente in un'oasi riposante significa restituire la città ai suoi abitanti.
             </p>
           </motion.div>

@@ -28,7 +28,7 @@ export default function FinalProject() {
         className="absolute inset-0 w-full h-full scale-125 z-[1]"
       >
         <Image 
-          src="/render-contestuale.jpg" // Assicurati che il nome sia corretto
+          src="/contestualizzazione.png" // Assicurati che il nome sia corretto
           alt="Parasole pubblico installato su panchina" 
           fill 
           className="object-cover opacity-80" // opacity-80 incupisce leggermente la foto

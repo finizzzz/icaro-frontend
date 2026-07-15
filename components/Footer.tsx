@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Colonna 1: Branding */}
         <div>
           <h3 className="font-heading font-bold text-white text-2xl mb-4">Icaro.</h3>
-          <p className="font-sans text-neutral-400 text-sm max-w-xs">
+          <p className="font-sans text-neutral-400 text-sm max-w-xs text-justify">
             Soluzioni add-on intelligenti per mitigare l'effetto isola di calore urbana, riqualificando l'arredo esistente.
           </p>
         </div>

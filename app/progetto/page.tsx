@@ -12,6 +12,7 @@ import CompetitorSection from "./components/CompetitorSection";
 import ConceptSection from "./components/ConceptSection";
 import MaterialsSection from "./components/MaterialsSection";
 import TechnicalStudies from "./components/TechnicalStudies";
+import Gallery from "./components/Gallery";
 import FinalProject from "./components/FinalProject";
 
 export default function Progetto() {
@@ -27,7 +28,8 @@ export default function Progetto() {
       <CompetitorSection />
       <ConceptSection />
       <MaterialsSection />
-      <TechnicalStudies />
+      <TechnicalStudies />S
+      <Gallery />
       <FinalProject />
 
     </main>
