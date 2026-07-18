@@ -41,11 +41,6 @@ export default function AboutInfo() {
     >
       
       {/* FIGLIO 1: Intestazione della sezione */}
-      <motion.div variants={itemReveal} className="flex justify-between items-center mb-8">
-        <span className="font-mono text-brand-primary tracking-[0.3em] text-xs md:text-sm font-bold uppercase mb-6 md:mb-6">
-          Overview Personale
-        </span>
-      </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
