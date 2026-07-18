@@ -71,14 +71,14 @@ export default function ProblemSection() {
             style={{ opacity: txt1Opacity, y: txtY }} 
             className="absolute inset-y-0 right-6 md:right-24 flex flex-col justify-center w-full max-w-xl"
           >
-            <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">01. IL FENOMENO</p>
+            <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">IL FENOMENO</p>
             {/* Titolo color primario con forte ombra bianca */}
-            <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-white">
+            <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
               L'Isola di Calore.
             </h2>
             {/* Paragrafo giustificato */}
             <p className="font-sans text-xl md:text-xl leading-relaxed text-white drop-shadow-lg text-justify w-full">
-              L'asfalto incamera radiazione solare. Le panchine esistenti, esposte al sole zenitale, raggiungono temperature superficiali critiche, rendendo lo spazio pubblico fisicamente inabitabile.
+              Oggi giorno il fenomeno dell'isola di calore urbana (UHI) è sempre più persistente e intenso nelle nostre città. Il riscaldamentoo climmatico, l'uso massiccio di asfalto e di laterizi, la presenza di pochi alberi e la morfologia urbana che riduce la circolazione del vento tra le vie sono tutti elementi che contribuiscono all'aumento delle temperature nel tessuto urbano.
             </p>
           </motion.div>
 
@@ -87,12 +87,12 @@ export default function ProblemSection() {
             style={{ opacity: txt2Opacity, y: txtY }} 
             className="absolute inset-y-0 left-6 md:left-24 flex flex-col justify-center w-full max-w-xl"
           >
-            <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">02. IMPATTO SOCIALE</p>
-            <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-white ">
-              Non siamo tutti uguali sotto il sole.
+            <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">IMPATTO SOCIALE</p>
+            <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
+              Categorie a rischio.
             </h2>
             <p className="font-sans text-lg md:text-xl leading-relaxed text-white drop-shadow-lg text-justify hyphens-auto w-full">
-              Il disagio termico estremo colpisce duramente chi vive la strada per necessità lavorativa e soggetti in cerca di riposo. Per loro, l'ombra non è comfort, è un'urgenza biologica.
+              Questo caldo sempre più intenso oltre a svuotare le città durante il periodo estivo è estremamente pericoloso per la salute. A soffrirne di più sono in primis sicuramente gli anziani, che spesso per protteggersi sono costretti all'isolamento sociale in casa, ma anche i lavoratori all'aperto, le donne incinte, i bambini piccoli, malati cronici e chi vive nelle periferie urbane.
             </p>
           </motion.div>
 
@@ -102,12 +102,12 @@ export default function ProblemSection() {
             style={{ opacity: txt3Opacity, y: txtY }} 
             className="absolute top-24 md:top-40 left-1/2 -translate-x-1/2 flex flex-col items-center w-full max-w-3xl px-6"
           >
-            <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">03. LA NECESSITÀ</p>
-            <h2 className="font-heading font-bold text-4xl md:text-6xl mb-6 text-white text-center">
-              Un'infrastruttura democratica.
+            <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">LA NECESSITÀ</p>
+            <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
+            La Situazione Attuale.  
             </h2>
             <p className="font-sans text-lg md:text-xl leading-relaxed text-white drop-shadow-lg text-center w-full">
-              Generare un'ombra mirata abbatte la temperatura percepita. Riqualificare una seduta rovente in un'oasi riposante significa restituire la città ai suoi abitanti.
+            Oggi le città sono impreparate a gestire questo problema, risultando di fatto inospitali. La mancanza di infrastrutture dedicate non fa che esacerbare un fenomeno destinato a peggiorare penalizzando severamente la quotidianità di chi vive l'ambiente urbano, svuotando progressivamente il tessuto urbano durante il periodo estivo.
             </p>
           </motion.div>
 

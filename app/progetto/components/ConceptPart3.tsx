@@ -46,14 +46,14 @@ export default function ConceptPart3() {
           {/* BOX TESTO (2/6 dello schermo) */}
           <div className="relative w-full md:w-1/3 h-[50vh] md:h-full flex items-center p-8 md:p-12 lg:p-16">
             <div className="max-w-lg">
-              <p className="font-mono text-[#08594A] tracking-[0.2em] text-xs font-bold uppercase mb-4">
-                01. Resistenza passiva
+              <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">
+                Movimento
               </p>
-              <h3 className="font-heading font-black uppercase text-4xl md:text-5xl tracking-tighter mb-6 text-white leading-[0.9]">
+              <h3 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
                 Cerniere <br/> a Frizione.
               </h3>
-              <p className="text-justify font-sans text-lg text-white/70 leading-relaxed">
-                Il cuore cinematico del sistema. Ingegnerizzate per sostenere carichi dinamici senza cedimenti, queste cerniere mantengono la posizione della copertura in modo autonomo, eliminando la necessità di blocchi meccanici soggetti a rottura.
+              <p className="font-sans text-lg md:text-xl leading-relaxed text-white/80 drop-shadow-lg text-justify w-full">
+              Per garantire una schermatura solare continua, il sistema sfrutta una cinematica basata su due movimenti. Il primo asse gestisce la regolazione bilaterale dell'inclinazione: la copertura permette un'escursione zenitale da 0° fino a un massimo di 60° per lato. Il meccanismo è affidato a una coppia di cerniere a frizione ad alte prestazioni integrate su ciascun tubolare in alluminio. Ingegnerizzate per assorbire i carichi dinamici, queste cerniere mantengono stabilmente l'angolo impostato in modo autonomo. Questa soluzione tecnica elimina la necessità di fermi o blocchi meccanici tradizionali, azzerando i micro-cedimenti e i punti critici maggiormente soggetti a usura o rottura.
               </p>
             </div>
           </div>
@@ -82,14 +82,14 @@ export default function ConceptPart3() {
           {/* BOX TESTO (2/6 dello schermo) */}
           <div className="relative w-full md:w-1/3 h-[50vh] md:h-full flex items-center p-8 md:p-12 lg:p-16">
             <div className="max-w-lg">
-              <p className="font-mono text-[#08594A] tracking-[0.2em] text-xs font-bold uppercase mb-4">
-                02. Trasmissione
+              <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">
+                Movimento
               </p>
-              <h3 className="font-heading font-black uppercase text-4xl md:text-5xl tracking-tighter mb-6 text-white leading-[0.9]">
-                Controllo <br/> Ergonomico.
+              <h3 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
+                Sistema a <br/> Manopola
               </h3>
-              <p className="font-sans text-lg text-white/70 text-justify leading-relaxed">
-                La gestione dell'inclinazione è demandata a un sistema a manopola con riduttore di sforzo integrato. La demoltiplicazione garantisce che l'interazione sia fluida, sicura e accessibile a qualsiasi utente, a prescindere dalla forza fisica.
+              <p className="font-sans text-lg md:text-xl leading-relaxed text-white/80 drop-shadow-lg text-justify w-full">
+              Il secondo asse di movimento governa l'inclinazione dell'intera struttura tramite un azionamento a manopola con riduttore di sforzo integrato. Questa soluzione meccanica permette di basculare il modulo per oltre 90° su entrambi i lati, assicurando un tracciamento solare continuo e preciso in qualsiasi fascia oraria e latitudine. Dal punto di vista dell'ergonomia fisica, il rapporto di demoltiplicazione garantisce un'interazione fluida e sicura: l'azionamento risulta accessibile a chiunque, svincolando completamente la movimentazione dal carico strutturale e dalla forza dell'utente.
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function ConceptPart3() {
           {/* BOX IMMAGINE (4/6 dello schermo) */}
           <div className="relative w-full md:w-2/3 h-[50vh] md:h-full bg-neutral-900 overflow-hidden">
             <Image 
-              src="/risorsa.png" 
+              src="/info.png" 
               alt="Cinematica del movimento" 
               fill 
               quality={100}
@@ -118,14 +118,14 @@ export default function ConceptPart3() {
           {/* BOX TESTO (2/6 dello schermo) */}
           <div className="relative w-full md:w-1/3 h-[50vh] md:h-full flex items-center p-8 md:p-12 lg:p-16">
             <div className="max-w-lg">
-              <p className="font-mono text-[#08594A] tracking-[0.2em] text-xs font-bold uppercase mb-4">
-                03. Cinematica
+              <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">
+                Movimento
               </p>
-              <h3 className="font-heading font-black uppercase text-4xl md:text-5xl tracking-tighter mb-6 text-white leading-[0.9]">
-                Geometria <br/> Adattiva.
+              <h3 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
+                Infografica <br/> 
               </h3>
-              <p className="font-sans text-lg text-white/70 text-justify leading-relaxed">
-                Il bilanciamento dei pesi è calcolato millimetricamente. Il movimento rotatorio segue una traiettoria progettata per massimizzare la proiezione d'ombra, mantenendo il baricentro dell'infrastruttura all'interno dei margini di sicurezza assoluta.
+              <p className="font-sans text-lg md:text-xl leading-relaxed text-white/80 drop-shadow-lg text-justify w-full">
+              Sulla superficie del carter a protezione del gruppo ingranaggi è integrata un'infografica progettata per comunicare visivamente la cinematica del sistema. L'interfaccia grafica chiarisce in modo intuitivo i due azionamenti a disposizione dell'utente: l'inclinazione del modulo, controllata dalla manopola posta in posizione strategica per ottimizzare l'ergonomia fisica e la leva, e l'apertura o chiusura della copertura, azionabile in modo rapido e diretto tramite maniglie in tessuto tecnico integrate su entrambi i lati della struttura.
               </p>
             </div>
           </div>

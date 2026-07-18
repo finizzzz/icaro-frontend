@@ -7,46 +7,72 @@ import { motion, Variants } from "framer-motion";
 
 export default function HomeVariants() {
   
-  const cardVariants: Variants = {
+  // 1. IL DIRETTORE D'ORCHESTRA GLOBALE
+  // Gestisce l'ingresso di OGNI elemento della sezione (testi e card)
+  const masterContainer: Variants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2 // Ogni elemento parte 0.2s dopo il precedente
+      }
+    }
+  };
+
+  // 2. LA "FISICA" CONDIVISA (Copiata da HomeProblem)
+  // Durata 1 secondo, partenza da y: 50, curva Bézier super fluida
+  const itemReveal: Variants = {
     hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+    show: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } 
+    }
   };
 
   return (
-    /* 
-      MODIFICA: 
-      Rimosso 'py-24'. 
-      Aggiunto 'pt-24' (mantiene l'aria sopra).
-      Aggiunto 'pb-12' (dimezza lo spazio bianco sotto le card).
-    */
     <section id="varianti" className="pt-24 pb-40 px-6 md:px-16 bg-[#F9F9F9] overflow-hidden">
-      <div className="max-w-6xl mx-auto">
+      
+      {/* 
+        IL CONTENITORE MASTER 
+        Qui mettiamo initial, whileInView e viewport. 
+        Tutti i motion.div interni erediteranno l'animazione automaticamente.
+      */}
+      <motion.div 
+        variants={masterContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-100px" }}
+        className="max-w-6xl mx-auto"
+      >
         
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h2 className="font-heading font-bold text-4xl md:text-5xl text-brand-dark mb-4">
+        {/* ZONA TESTO */}
+        <div className="text-center mb-16">
+          {/* FIGLIO 1: Entra subito */}
+          <motion.h2 
+            variants={itemReveal}
+            className="font-heading font-bold text-4xl md:text-5xl text-brand-dark mb-8"
+          >
             Due soluzioni, una visione.
-          </h2>
-          <p className="font-sans text-brand-dark/60 text-xl md:text-xl mx-auto">
-            Icaro è un'infrastruttura democratica, progettata per adattarsi organicamente alle diverse esigenze urbane.
-          </p>
-        </motion.div>
+          </motion.h2>
 
+          {/* FIGLIO 2: Entra a 0.2s */}
+          <motion.p 
+            variants={itemReveal}
+            className="font-sans text-brand-dark/60 text-xl md:text-xl mx-auto"
+          >
+            Icaro è un'infrastruttura democratica, progettata per adattarsi organicamente alle diverse esigenze urbane.
+          </motion.p>
+        </div>
+
+        {/* ZONA CARD */}
         <div className="grid md:grid-cols-2 gap-10">
           
           {/* ==========================================
-              CARD 1: ADD-ON
+              FIGLIO 3: CARD ADD-ON (Entra a 0.4s)
               ========================================== */}
           <motion.div 
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-50px" }}
+            variants={itemReveal}
             className="group rounded-3xl bg-white border border-gray-100 shadow-sm hover:shadow-2xl hover:bg-brand-dark hover:scale-[1.05] hover:z-10 transition-all duration-500 flex flex-col overflow-hidden cursor-pointer"
           >
             <div className="aspect-video relative overflow-hidden">
@@ -86,14 +112,10 @@ export default function HomeVariants() {
           </motion.div>
 
           {/* ==========================================
-              CARD 2: STAND-ALONE
+              FIGLIO 4: CARD STAND-ALONE (Entra a 0.6s)
               ========================================== */}
           <motion.div 
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ delay: 0.2 }}
+            variants={itemReveal}
             className="group rounded-3xl bg-white border border-gray-100 shadow-sm hover:shadow-2xl hover:bg-brand-dark hover:scale-[1.05] hover:z-10 transition-all duration-500 flex flex-col overflow-hidden cursor-pointer"
           >
             <div className="aspect-video relative overflow-hidden">
@@ -133,7 +155,7 @@ export default function HomeVariants() {
           </motion.div>
 
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

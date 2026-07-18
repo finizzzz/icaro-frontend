@@ -40,8 +40,8 @@ export default function ConceptPart1() {
       </div>
 
       {/* 2. OVERLAY PER LEGGIBILITÀ */}
-      <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-black via-black/50 to-transparent z-10" />
-
+      <div className="absolute inset-x-0 bottom-0 h-4/4 bg-gradient-to-t from-black via-black/1 to-transparent z-30" />
+    
       {/* 3. TESTO IN SOVRAIMPRESSIONE */}
       <motion.div 
         variants={containerVariants}
@@ -55,12 +55,7 @@ export default function ConceptPart1() {
         */
         className="absolute inset-0 z-20 flex flex-col items-start justify-end px-6 pb-24 w-full"
       >
-        <motion.h1 
-          variants={itemVariants}
-          className="font-heading font-black text-6xl md:text-[7rem] lg:text-[9rem] text-white px-40 mb-4 text-left"
-        >
-          CONCEPT.
-        </motion.h1>
+
         
         <motion.p 
           variants={itemVariants}

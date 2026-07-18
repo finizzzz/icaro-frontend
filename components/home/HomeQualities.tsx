@@ -46,7 +46,7 @@ export default function HomeQualities() {
             <h3 className="font-heading font-black uppercase text-6xl md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-brand-dark">
               ADD-ON <br /> UNIVERSALE
             </h3>
-            <p className="text-justify font-sans text-brand-dark/80 text-lg md:text-xl max-w-3xl leading-relaxed">
+            <p className="text-justify font-sans text-brand-dark/80 text-lg md:text-xl max-w-xl leading-relaxed mb-10">
   Progettato per integrarsi perfettamente sulle infrastrutture esistenti. 
   Trasforma le normali panchine pubbliche in micro-oasi climatiche senza 
   la necessità di smantellare l'arredo urbano attuale.
@@ -70,7 +70,7 @@ export default function HomeQualities() {
             <h3 className="font-heading font-black uppercase text-6xl md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-brand-dark">
               STUDIO DEI <br /> MATERIALI
             </h3>
-            <p className="text-justify font-sans text-brand-dark/80 text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p className="text-justify font-sans text-brand-dark/80 text-lg md:text-xl max-w-xl leading-relaxed mb-10">
               Ogni componente è ingegnerizzato per garantire zero manutenzione nel tempo e altissime prestazioni termiche. Le superfici respingono l'irraggiamento resistendo in modo assoluto all'usura.
             </p>
           </motion.div>
@@ -92,7 +92,7 @@ export default function HomeQualities() {
             <h3 className="font-heading font-black uppercase text-6xl md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-brand-dark">
               CANTIERE <br /> INVISIBILE
             </h3>
-            <p className="text-justify font-sans text-brand-dark/80 text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p className="text-justify font-sans text-brand-dark/80 text-lg md:text-xl max-w-xl leading-relaxed mb-10">
               Il design modulare permette un sistema di montaggio estremamente semplificato. Minimizza i tempi di intervento riducendo a zero i disagi per la viabilità cittadina.
             </p>
           </motion.div>
@@ -114,7 +114,7 @@ export default function HomeQualities() {
             <h3 className="font-heading font-black uppercase text-6xl md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-brand-dark">
               OMBRA <br /> COSTANTE
             </h3>
-            <p className="text-justify font-sans text-brand-dark/80 text-lg md:text-xl max-w-xl leading-relaxed">
+            <p className="text-justify font-sans text-brand-dark/80 text-lg md:text-xl max-w-xl leading-relaxed mb-10">
               Inseguendo la traiettoria solare tramite un sistema di inclinazione manuale intuitivo, l'architettura garantisce una zona d'ombra confortevole in ogni istante della giornata.
             </p>
           </motion.div>

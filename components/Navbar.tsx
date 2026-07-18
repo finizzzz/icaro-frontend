@@ -47,7 +47,7 @@ export default function Navbar() {
           </div>
           
           <Link href="#footer" className="bg-white text-neutral-900 px-5 py-2 rounded-full font-sans font-bold text-sm transition-all duration-300 hover:scale-110 hover:shadow-lg hover:bg-white">
-            Contattaci
+            Contattami
           </Link>
 
         </div>

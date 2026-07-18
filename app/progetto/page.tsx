@@ -8,6 +8,7 @@ import Footer from "../../components/Footer";
 import ProjectHero from "./components/ProjectHero";
 import ProblemSection from "./components/ProblemSection";
 import InspirationSection from "./components/InspirationSection";
+import Sketch from "./components/Sketch";
 import CompetitorSection from "./components/CompetitorSection";
 import ConceptSection from "./components/ConceptSection";
 import MaterialsSection from "./components/MaterialsSection";
@@ -26,6 +27,7 @@ export default function Progetto() {
       <ProblemSection />
       <InspirationSection />
       <CompetitorSection />
+      <Sketch />
       <ConceptSection />
       <MaterialsSection />
       <TechnicalStudies />S

@@ -54,7 +54,7 @@ export default function HomeProblem() {
             <p className="font-mono text-red-500 tracking-[0.3em] text-xs md:text-sm font-bold uppercase mb-6 md:mb-10">
               Emergenza Climatica
             </p>
-            <h2 className="font-heading font-black text-6xl md:text-[7rem] lg:text-[9rem] text-white leading-[0.85] tracking-tighter mb-8 md:mb-12 uppercase">
+            <h2 className="font-heading font-black uppercase text-6xl md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-white">
               CALDO <br /> SEMPRE PIÙ <br /> INTENSO
             </h2>
           </motion.div>

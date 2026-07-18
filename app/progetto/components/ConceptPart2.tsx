@@ -23,10 +23,10 @@ export default function HomeVariantsDark() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-4">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
             Due soluzioni, una visione.
           </h2>
-          <p className="font-sans text-white/60 text-xl mx-auto">
+          <p className="font-sans text-white/80 text-xl md:text-xl mx-auto">
             Icaro è un'infrastruttura democratica, progettata per adattarsi organicamente alle diverse esigenze urbane.
           </p>
         </motion.div>
