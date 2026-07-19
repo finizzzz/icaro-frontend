@@ -37,7 +37,7 @@ export default function ConceptPart3() {
           */}
           <div className="relative w-full md:w-3/5 h-[50vh] md:h-full bg-neutral-900 overflow-hidden">
             <Image 
-              src="/cerniere.PNG" 
+              src="/cerniere.avif" 
               alt="Dettaglio cerniere a frizione" 
               fill 
               quality={100} 
@@ -80,7 +80,7 @@ export default function ConceptPart3() {
           {/* MODIFICA MACRO: Immagine al 60% */}
           <div className="relative w-full md:w-3/5 h-[50vh] md:h-full bg-neutral-900 overflow-hidden">
             <Image 
-              src="/manovella.png" 
+              src="/manovella.avif" 
               alt="Meccanismo a manopola" 
               fill 
               quality={100}
@@ -118,7 +118,7 @@ export default function ConceptPart3() {
           {/* MODIFICA MACRO: Immagine al 60% */}
           <div className="relative w-full md:w-3/5 h-[50vh] md:h-full bg-neutral-900 overflow-hidden">
             <Image 
-              src="/info.png" 
+              src="/info.jpg" 
               alt="Cinematica del movimento" 
               fill 
               quality={100}

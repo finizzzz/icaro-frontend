@@ -42,7 +42,7 @@ export default function HomeVariantsDark() {
             className="group rounded-3xl bg-neutral-900 border border-neutral-800 shadow-sm hover:shadow-2xl hover:bg-[#08594A] hover:scale-[1.05] hover:z-10 transition-all duration-500 flex flex-col overflow-hidden cursor-pointer"
           >
             <div className="aspect-video relative overflow-hidden">
-              <Image src="/add-on-new.png" alt="Versione Add-on" fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" />
+              <Image src="/add-on-new.avif" alt="Versione Add-on" fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" />
             </div>
             
             <div className="p-8 flex flex-col flex-grow">
@@ -82,7 +82,7 @@ export default function HomeVariantsDark() {
             className="group rounded-3xl bg-neutral-900 border border-neutral-800 shadow-sm hover:shadow-2xl hover:bg-[#08594A] hover:scale-[1.05] hover:z-10 transition-all duration-500 flex flex-col overflow-hidden cursor-pointer"
           >
             <div className="aspect-video relative overflow-hidden">
-              <Image src="/alone-new.png" alt="Versione Autonoma" fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" />
+              <Image src="/alone-new.avif" alt="Versione Autonoma" fill className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" />
             </div>
             
             <div className="p-8 flex flex-col flex-grow">

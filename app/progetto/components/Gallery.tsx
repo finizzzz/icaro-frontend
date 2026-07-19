@@ -9,9 +9,9 @@ export default function Gallery() {
 
   // 1. DATA ARRAY ESPANSO: Aggiunte le foto 11 e 12 per scalare il portfolio
   const images = [
-    "/g1.png", "/new-2.png", "/g3.png", "/new-4.png", "/g5.png",
-    "/g6.png", "/g7.png", "/g8.png", "/g9.png", "/cerniere.png",
-    "/manovella.png", "/g12.png"
+    "/g1.avif", "/new-2.avif", "/g3.avif", "/new-4.avif", "/g5.avif",
+    "/g6.avif", "/g7.avif", "/g8.avif", "/g9.avif", "/cerniere.avif",
+    "/manovella.avif", "/g12.avif"
   ];
 
   // 2. LOGICA D'INDICE AUTOMATICA: Usa images.length dinamico. 

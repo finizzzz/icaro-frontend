@@ -47,7 +47,7 @@ export default function EngineeringSection() {
         className="absolute inset-0 z-0"
       >
         <Image 
-          src="/QUOTE.PNG" 
+          src="/quote.png" 
           alt="Blueprint Quote e Ingombri" 
           fill 
           className="object-contain" 

@@ -71,7 +71,7 @@ export default function InspirationSection() {
             className="absolute right-[-10%] md:right-[5%] top-[-10%] md:top-[0%] w-[90%] md:w-[50%] aspect-[4/5] md:aspect-square grayscale z-0 pointer-events-none overflow-hidden shadow-2xl"
           >
             <Image 
-              src="/masharabiya.jpg" 
+              src="/masharabiya.avif" 
               alt="L'ombra ancestrale: esempio di Masharabiya" 
               fill 
               className="object-cover object-left" 

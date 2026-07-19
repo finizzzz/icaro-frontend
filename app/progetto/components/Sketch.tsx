@@ -29,19 +29,19 @@ export default function Sketch() {
 
   const ideationFiles = [
     { 
-      src: "/sk1.png", 
+      src: "/sk1.avif", 
       alt: "Schizzo di studio 1", 
       gridClass: "md:col-span-4 md:row-span-2", 
       imageClass: "object-contain object-center" 
     },
     { 
-      src: "/sk2.png", 
+      src: "/sk2.avif", 
       alt: "Schizzo di studio 2", 
       gridClass: "md:col-span-3 md:row-span-2", 
       imageClass: "object-contain object-center" 
     },
     { 
-      src: "/sk3.png", 
+      src: "/sk3.avif", 
       alt: "Schizzo di dettaglio 3", 
       gridClass: "md:col-span-5 md:row-span-2", 
       imageClass: "object-contain object-center" 

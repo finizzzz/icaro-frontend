@@ -33,7 +33,7 @@ export default function HomeCompetitors() {
       title: "Arredo Urbano Standard",
       subtitle: "(Es. Pensiline dei Bus)",
       icon: <BusFront size={20} className="text-neutral-400 group-hover:text-white transition-colors duration-500" />,
-      image: "/pensilina.jpg", 
+      image: "/pensilina.avif", 
       flaw: "Effetto serra e totale staticità.",
       description: "Coperture traslucide che intrappolano il calore e non impediscono il passaggio dei raggi solari."
     },
@@ -41,7 +41,7 @@ export default function HomeCompetitors() {
       title: "Parasole da giardino",
       subtitle: "(Es. Extremis Hopper)",
       icon: <Sun size={20} className="text-neutral-400 group-hover:text-white transition-colors duration-500" />,
-      image: "/extremis.jpg", 
+      image: "/extremis.avif", 
       flaw: "Protezione solo zenitale.",
       description: "Costosi e destinati a spazi privati. La tenda orizzontale non protegge quando il sole si abbassa sull'orizzonte."
     },
@@ -49,7 +49,7 @@ export default function HomeCompetitors() {
       title: "Landmark Architettonici",
       subtitle: "(Es. Metropol Parasol)",
       icon: <Building2 size={20} className="text-neutral-400 group-hover:text-white transition-colors duration-500" />,
-      image: "/metropol.jpg",
+      image: "/metropol.avif",
       flaw: "Invasività e costi insostenibili.",
       description: "Straordinari ma impossibili da replicare in modo capillare per risolvere il problema nelle periferie."
     },
@@ -57,7 +57,7 @@ export default function HomeCompetitors() {
       title: "Strutture Mobili",
       subtitle: "(Es. Mollusc Tent)",
       icon: <Tent size={20} className="text-neutral-400 group-hover:text-white transition-colors duration-500" />,
-      image: "/mollusco.jpg", 
+      image: "/mollusco.avif", 
       flaw: "Contesto non urbano.",
       description: "Meccanica interessante ma materiali e concezione non adatti agli abusi dello spazio pubblico."
     }

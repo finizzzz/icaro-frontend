@@ -49,15 +49,15 @@ export default function ProblemSection() {
         {/* Aggiunto style={{ scale: imgScale, y: imgY }} a tutte le immagini */}
         
         <motion.div style={{ scale: imgScale, y: imgY }} className="absolute inset-0 z-[1]">
-          <Image src="/panchina-assolata-1-new.png" alt="Panchina al sole" fill className="object-cover" unoptimized priority />
+          <Image src="/panchina-assolata-1-new.avif" alt="Panchina al sole" fill className="object-cover" unoptimized priority />
         </motion.div>
         
         <motion.div style={{ opacity: img2Opacity, scale: imgScale, y: imgY }} className="absolute inset-0 z-[2]">
-          <Image src="/panchina-assolata-2-new.png" alt="Disagio termico" fill className="object-cover" unoptimized priority />
+          <Image src="/panchina-assolata-2-new.avif" alt="Disagio termico" fill className="object-cover" unoptimized priority />
         </motion.div>
         
         <motion.div style={{ opacity: img3Opacity, scale: imgScale, y: imgY }} className="absolute inset-0 z-[3]">
-          <Image src="/panchina-assolata-3-new.png" alt="Infrastruttura ombra" fill className="object-cover" unoptimized priority />
+          <Image src="/panchina-assolata-3-new.avif" alt="Infrastruttura ombra" fill className="object-cover" unoptimized priority />
         </motion.div>
 
         {/* --- LIVELLO 2: OVERLAY SCURO --- */}

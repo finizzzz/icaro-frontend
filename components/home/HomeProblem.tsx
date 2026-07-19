@@ -32,7 +32,7 @@ export default function HomeProblem() {
         className="md:absolute right-0 top-40 w-full md:w-[60%] lg:w-[50%] h-[40vh] md:h-full z-0 overflow-hidden"
       >
         <Image 
-          src="/termica.png" 
+          src="/termica.avif" 
           alt="Foto termica Isola di Calore"
           fill
           className="object-cover"

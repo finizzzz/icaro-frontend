@@ -33,7 +33,7 @@ export default function HomeQualities() {
             variants={imageReveal} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}
             className="absolute right-[-10%] md:right-[15%] top-[-10%] w-[80%] md:w-[45%] aspect-square grayscale z-0 pointer-events-none"
           >
-            <Image src="/add-on-new.png" alt="Render Add-on" fill className="object-cover" />
+            <Image src="/add-on-new.avif" alt="Render Add-on" fill className="object-cover" />
           </motion.div>
 
           <motion.div 
@@ -59,7 +59,7 @@ export default function HomeQualities() {
             variants={imageReveal} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}
             className="absolute left-[-10%] md:left-[15%] top-[20%] w-[90%] md:w-[50%] aspect-video grayscale z-0 pointer-events-none"
           >
-            <Image src="/new-3.png" alt="Analisi Materiali" fill className="object-cover" />
+            <Image src="/new-3.avif" alt="Analisi Materiali" fill className="object-cover" />
           </motion.div>
           
           {/* 
@@ -87,7 +87,7 @@ export default function HomeQualities() {
             variants={imageReveal} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}
             className="absolute right-[-10%] md:right-[10%] top-[-30%] w-[80%] md:w-[70%] aspect-square grayscale z-0 pointer-events-none"
           >
-            <Image src="/new-4.png" alt="Installazione" fill className="object-contain object-center" />
+            <Image src="/new-4.avif" alt="Installazione" fill className="object-contain object-center" />
           </motion.div>
           <motion.div 
             variants={textReveal} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}
@@ -110,7 +110,7 @@ export default function HomeQualities() {
             variants={imageReveal} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}
             className="absolute left-[-10%] md:left-[30%] top-[5%] w-[90%] md:w-[35%] aspect-square grayscale z-0 pointer-events-none"
           >
-            <Image src="/new-2.png" alt="Ombra Perenne" fill className="object-cover object-center" />
+            <Image src="/new-2.avif" alt="Ombra Perenne" fill className="object-cover object-center" />
           </motion.div>
           
           {/* 

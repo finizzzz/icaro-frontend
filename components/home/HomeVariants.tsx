@@ -77,7 +77,7 @@ export default function HomeVariants() {
           >
             <div className="aspect-video relative overflow-hidden">
               <Image 
-                src="/add-on-new.png" 
+                src="/add-on-new.avif" 
                 alt="Versione Add-on" 
                 fill 
                 className="object-cover transition-transform duration-700 group-hover:scale-105" 
@@ -120,7 +120,7 @@ export default function HomeVariants() {
           >
             <div className="aspect-video relative overflow-hidden">
               <Image 
-                src="/alone-new.png" 
+                src="/alone-new.avif" 
                 alt="Versione Autonoma" 
                 fill 
                 className="object-cover transition-transform duration-700 group-hover:scale-105" 
