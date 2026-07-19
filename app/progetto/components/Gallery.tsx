@@ -59,7 +59,7 @@ export default function Gallery() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative z-20 pt-32 md:pt-120 px-6 md:px-30 pointer-events-none"
+        className="relative z-20 pt-32 md:pt-50 px-6 md:px-30 pointer-events-none"
       >
         <p className="font-mono text-white tracking-[0.3em] text-xs md:text-sm font-bold uppercase drop-shadow-md">
           Galleria

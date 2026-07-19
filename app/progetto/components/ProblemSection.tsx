@@ -1,3 +1,4 @@
+// app/progetto/components/ProblemSection.tsx
 "use client";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -13,31 +14,18 @@ export default function ProblemSection() {
 
   /* ========================================================================
      1. TIMELINE ALLINEATA (Testi e Immagini usano gli stessi tempi!)
-     Regola: [inizio_comparsa, fine_comparsa, inizio_scomparsa, fine_scomparsa]
      ======================================================================== */
-
-  // SCENA 1: (Da 0 a 25% dello scroll)
-  // L'immagine 1 è la base, non ha bisogno di opacità animata.
   const txt1Opacity = useTransform(scrollYProgress, [0, 0.05, 0.20, 0.25], [0, 1, 1, 0]);
-  
-  // SCENA 2: (Da 25% a 60% dello scroll) - ALLINEAMENTO PERFETTO
-  const img2Opacity = useTransform(scrollYProgress, [0.25, 0.35, 0.55, 0.60], [0, 1, 1, 1]); // Copre tutto per sempre
-  const txt2Opacity = useTransform(scrollYProgress, [0.25, 0.35, 0.55, 0.60], [0, 1, 1, 0]); // Entra insieme alla foto 2
-  
-  // SCENA 3: (Da 60% alla fine) - ALLINEAMENTO PERFETTO
-  const img3Opacity = useTransform(scrollYProgress, [0.60, 0.70, 1, 1], [0, 1, 1, 1]); // Copre tutto per sempre
-  const txt3Opacity = useTransform(scrollYProgress, [0.60, 0.70, 0.95, 1], [0, 1, 1, 1]); // Entra insieme alla foto 3
+  const img2Opacity = useTransform(scrollYProgress, [0.25, 0.35, 0.55, 0.60], [0, 1, 1, 1]); 
+  const txt2Opacity = useTransform(scrollYProgress, [0.25, 0.35, 0.55, 0.60], [0, 1, 1, 0]); 
+  const img3Opacity = useTransform(scrollYProgress, [0.60, 0.70, 1, 1], [0, 1, 1, 1]); 
+  const txt3Opacity = useTransform(scrollYProgress, [0.60, 0.70, 0.95, 1], [0, 1, 1, 1]); 
 
   /* ========================================================================
      2. MOTORE DI MOVIMENTO (Zoom, Spostamento e Parallasse)
      ======================================================================== */
-  // Zoom fluido: da scala 1 (100%) a 1.15 (115%) lungo tutto lo scroll
   const imgScale = useTransform(scrollYProgress, [0, 1], [1, 1.10]);
-  
-  // Spostamento verticale: le immagini scendono leggermente (da 0% a 5% della loro altezza)
   const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
-
-  // Testi che fluttuano
   const txtY = useTransform(scrollYProgress, [0, 1], [40, -40]); 
 
   return (
@@ -45,9 +33,7 @@ export default function ProblemSection() {
       
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         
-        {/* --- LIVELLO 1: LE FOTO (ORA SI MUOVONO!) --- */}
-        {/* Aggiunto style={{ scale: imgScale, y: imgY }} a tutte le immagini */}
-        
+        {/* --- LIVELLO 1: LE FOTO --- */}
         <motion.div style={{ scale: imgScale, y: imgY }} className="absolute inset-0 z-[1]">
           <Image src="/panchina-assolata-1-new.avif" alt="Panchina al sole" fill className="object-cover" priority={true} />
         </motion.div>
@@ -66,48 +52,57 @@ export default function ProblemSection() {
         {/* --- LIVELLO 3: I TESTI FLUTTUANTI --- */}
         <div className="absolute inset-0 z-[20] pointer-events-none">
           
-          {/* TESTO 1: A DESTRA */}
+          {/* 
+            TESTO 1: A DESTRA 
+            Mobile: Margini fluidi (left-6 right-6).
+            Tablet: Occupa metà schermo (md:w-1/2) e si aggancia a destra.
+            Desktop: Rientra del 15% (lg:right-[15%]) per un look editoriale.
+          */}
           <motion.div 
             style={{ opacity: txt1Opacity, y: txtY }} 
-            className="absolute inset-y-0 right-6 md:right-74 flex flex-col justify-center w-full max-w-xl"
+            className="absolute inset-y-0 left-6 right-6 md:left-auto md:right-12 lg:right-[15%] flex flex-col justify-center w-auto md:w-1/2 lg:w-[40%] max-w-xl"
           >
             <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">IL FENOMENO</p>
-            {/* Titolo color primario con forte ombra bianca */}
-            <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
+            <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8 break-words">
               L'Isola di Calore.
             </h2>
-            {/* Paragrafo giustificato */}
             <p className="font-sans text-sm md:text-base leading-relaxed text-white drop-shadow-lg text-left w-full">
-              Oggi giorno il fenomeno dell'isola di calore urbana (UHI) è sempre più persistente e intenso nelle nostre città. Il riscaldamentoo climmatico, l'uso massiccio di asfalto e di laterizi, la presenza di pochi alberi e la morfologia <br /> urbana che riduce la circolazione del vento tra le vie sono tutti elementi che contribuiscono all'aumento delle temperature nel tessuto urbano.
+              Oggigiorno il fenomeno dell'isola di calore urbana (UHI) è sempre più persistente e intenso nelle nostre città. Il riscaldamento climatico, l'uso massiccio di asfalto e di laterizi, la presenza di pochi alberi e la morfologia urbana che riduce la circolazione del vento tra le vie sono tutti elementi che contribuiscono all'aumento delle temperature nel tessuto urbano.
             </p>
           </motion.div>
 
-          {/* TESTO 2: A SINISTRA */}
+          {/* 
+            TESTO 2: A SINISTRA 
+            Logica speculare al Testo 1. Si aggancia a sinistra su schermi ampi.
+          */}
           <motion.div 
             style={{ opacity: txt2Opacity, y: txtY }} 
-            className="absolute inset-y-0 left-6 md:left-74 flex flex-col justify-center w-full max-w-xl"
+            className="absolute inset-y-0 left-6 right-6 md:right-auto md:left-12 lg:left-[15%] flex flex-col justify-center w-auto md:w-1/2 lg:w-[40%] max-w-xl"
           >
             <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">IMPATTO SOCIALE</p>
-            <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
+            <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8 break-words">
               Categorie a rischio.
             </h2>
             <p className="font-sans text-sm md:text-base leading-relaxed text-white drop-shadow-lg text-left w-full">
-              Questo caldo sempre più intenso oltre a svuotare le città durante il periodo estivo è estremamente pericoloso per la salute. A soffrirne di più sono in primis gli anziani, che spesso per protteggersi sono costretti all'isolamento sociale in casa, ma anche i lavoratori all'aperto, le donne incinte, i bambini piccoli, malati cronici e chi vive nelle periferie urbane.
+              Questo caldo sempre più intenso oltre a svuotare le città durante il periodo estivo è estremamente pericoloso per la salute. A soffrirne di più sono in primis gli anziani, che spesso per proteggersi sono costretti all'isolamento sociale in casa, ma anche i lavoratori all'aperto, le donne incinte, i bambini piccoli, malati cronici e chi vive nelle periferie urbane.
             </p>
           </motion.div>
 
-          {/* TESTO 3: IN ALTO AL CENTRO */}
-          {/* Nota: per il testo centrale, ho mantenuto items-center sul contenitore padre per centrarlo nello schermo, ma il testo interno è giustificato */}
+          {/* 
+            TESTO 3: IN ALTO AL CENTRO 
+            Mobile: top-24 e margini laterali flessibili (left-6 right-6).
+            Tablet/Desktop: top-40, posizionamento baricentrico puro (left-1/2 -translate-x-1/2).
+          */}
           <motion.div 
             style={{ opacity: txt3Opacity, y: txtY }} 
-            className="absolute top-24 md:top-40 left-1/2 -translate-x-1/2 flex flex-col items-center w-full max-w-3xl px-6"
+            className="absolute top-24 left-6 right-6 md:top-40 md:left-1/2 md:-translate-x-1/2 md:right-auto flex flex-col items-center w-auto md:w-full max-w-3xl md:px-6"
           >
             <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">LA NECESSITÀ</p>
-            <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
-            La Situazione Attuale.  
+            <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8 break-words text-center">
+              La Situazione Attuale.  
             </h2>
             <p className="font-sans text-sm md:text-base leading-relaxed text-white drop-shadow-lg text-center w-full">
-            Oggi le città sono impreparate a gestire questo problema, risultando di fatto inospitali. La mancanza di infrastrutture dedicate non fa che esacerbare un fenomeno destinato a peggiorare penalizzando severamente la quotidianità di chi vive l'ambiente urbano, svuotando progressivamente il tessuto urbano durante il periodo estivo.
+              Oggi le città sono impreparate a gestire questo problema, risultando di fatto inospitali. La mancanza di infrastrutture dedicate non fa che esacerbare un fenomeno destinato a peggiorare penalizzando severamente la quotidianità di chi vive l'ambiente urbano, svuotando progressivamente il tessuto urbano durante il periodo estivo.
             </p>
           </motion.div>
 

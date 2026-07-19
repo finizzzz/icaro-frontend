@@ -31,7 +31,7 @@ export default function InspirationSection() {
   const imageReveal: Variants = {
     hidden: { opacity: 0, scale: 1.05 },
     show: { 
-      opacity: 0.6, 
+      opacity: 0.4, 
       scale: 1, 
       transition: { duration: 1.5, ease: "easeOut" } 
     } 
@@ -68,7 +68,7 @@ export default function InspirationSection() {
           */}
           <motion.div 
             variants={imageReveal} 
-            className="absolute right-[-10%] md:right-[5%] top-[-10%] md:top-[0%] w-[90%] md:w-[50%] aspect-[4/5] md:aspect-square grayscale z-0 pointer-events-none overflow-hidden shadow-2xl"
+            className="absolute right-[10%] md:right-[5%] lg:right-[5%] top-[-30%] md:top-[-10%] w-[90%] md:w-[50%] aspect-[4/5] md:aspect-square grayscale z-0 pointer-events-none overflow-hidden shadow-2xl"
           >
             <Image 
               src="/masharabiya.avif" 
@@ -92,7 +92,7 @@ export default function InspirationSection() {
             {/* FIGLIO 4: Paragrafo (Entra 0.6s dopo l'inizio) */}
             <motion.p 
               variants={textReveal} 
-              className="font-sans text-sm md:text-base leading-relaxed text-brand-dark drop-shadow-lg text-left max-w-2xl"
+              className="font-sans text-sm md:text-base leading-relaxed text-brand-dark drop-shadow-lg text-left max-w-2xl lg:max-w-l"
             >
               Le antiche civiltà avevano già codificato ciò che i dati odierni confermano: l'ombra è la 'tecnologia' di raffrescamento passivo più antica e a impatto zero di cui disponiamo. <br />È su questo ritorno alle origini che si fonda il nostro progetto. Durante i picchi termici estivi, ripararsi dalla radiazione diretta offre un vantaggio drastico: l'ombra abbatte la temperatura percepita fino a 15°C e impedisce alle superfici urbane di immagazzinare calore, spezzando <br /> di fatto il ciclo delle Isole di Calore.
             </motion.p>

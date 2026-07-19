@@ -53,7 +53,7 @@ export default function HomeHero() {
         initial="hidden"
         animate="show"
         // In un flex-col, items-start assicura che TUTTI i blocchi dentro siano bloccati sul margine sinistro.
-        className="absolute inset-0 z-20 flex flex-col items-start justify-end px-6 md:px-16 pb-24 md:pb-32 max-w-7xl mx-auto"
+        className="absolute inset-0 z-20 flex flex-col items-start justify-end px-6 md:px-16 lg:px-16 pb-20 md:pb-32 lg:px-16 w-full md:w-3/4 mx-auto"
       >
 
         

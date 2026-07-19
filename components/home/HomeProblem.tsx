@@ -29,7 +29,7 @@ export default function HomeProblem() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "-100px" }}
-        className="md:absolute right-0 top-40 w-full md:w-[60%] lg:w-[50%] h-[40vh] md:h-full z-0 overflow-hidden"
+        className="absolute right-0 top-10 w-full md:w-[80%] lg:w-[80%] h-[40vh] h-full md:h-full lg:h-full z-0 overflow-hidden"
       >
         <Image 
           src="/termica.avif" 
@@ -39,7 +39,9 @@ export default function HomeProblem() {
           priority={true}
         />
         {/* Il gradiente ora deve estendersi per sfumare l'immagine verso il nero della sezione */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent md:absolute inset-0 bg-gradient-to-r from-black via-black/10 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/10 to-transparent md:absolute inset-0 bg-gradient-to-b from-black via-black/10 to-transparent"></div>
+        
       </motion.div>
 
       {/* CONTENITORE DEL TESTO */}

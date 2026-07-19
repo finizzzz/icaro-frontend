@@ -44,7 +44,7 @@ export default function EngineeringSection() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "-100px" }}
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 mb-100 md:mb-0"
       >
         <Image 
           src="/quote.png" 
@@ -70,12 +70,12 @@ export default function EngineeringSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="mt-auto flex flex-col items-start w-full max-w-2xl pointer-events-auto md:mr-12 lg:mr-50"
+          className="mt-auto flex flex-col items-start w-full max-w-2xl pointer-events-auto md:mr-12 lg:mr-30"
         >
           
           <motion.p 
             variants={itemReveal}
-            className="font-mono text-brand-primary tracking-[0.3em] text-xs md:text-sm font-bold uppercase mb-6"
+            className="font-mono text-brand-primary tracking-[0.3em] text-xs md:text-sm font-bold uppercase mb-0"
           >
             Quote
           </motion.p>
