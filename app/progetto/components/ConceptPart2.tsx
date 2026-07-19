@@ -26,7 +26,7 @@ export default function HomeVariantsDark() {
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
             Due soluzioni, una visione.
           </h2>
-          <p className="font-sans text-white/80 text-xl md:text-xl mx-auto">
+          <p className="font-sans text-sm md:text-base text-white/80 mx-auto">
             Icaro è un'infrastruttura democratica, progettata per adattarsi organicamente alle diverse esigenze urbane.
           </p>
         </motion.div>
@@ -55,7 +55,7 @@ export default function HomeVariantsDark() {
                 </h3>
               </div>
 
-              <p className="text-justify font-sans text-white/60 group-hover:text-white/90 text-sm leading-relaxed mb-6 transition-colors duration-500">
+              <p className="text-left font-sans text-white/60 group-hover:text-white/90 text-sm leading-relaxed mb-6 transition-colors duration-500">
                 Si installa sopra alle sedute urbane preesistenti. Ideale per il retrofitting intelligente, restituisce ai cittadini spazi altrimenti inutilizzabili conferendone una nuova vita.
               </p>
               
@@ -95,7 +95,7 @@ export default function HomeVariantsDark() {
                 </h3>
               </div>
 
-              <p className="text-justify font-sans text-white/60 group-hover:text-white/90 text-sm leading-relaxed mb-6 transition-colors duration-500">
+              <p className="text-left font-sans text-white/60 group-hover:text-white/90 text-sm leading-relaxed mb-6 transition-colors duration-500">
                 Concepita per l'installazione ex-novo. Porta comfort climatico e sedute ergonomiche in piazze e sprovviste di arredo.
               </p>
               

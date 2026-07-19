@@ -77,7 +77,7 @@ export default function Sketch() {
           {/* FIGLIO 2: Entra a 0.2s */}
           <motion.h2 
             variants={itemReveal}
-            className="font-heading font-black uppercase text-6xl md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-brand-dark"
+            className="font-heading font-black uppercase text-5xl md:text-[6rem] lg:text-[8rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-brand-dark"
           >
             SKETCH <br />
           </motion.h2>

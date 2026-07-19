@@ -55,7 +55,7 @@ export default function HomeAbout() {
           {/* FIGLIO 2: Il Titolo Gigante */}
           <motion.h2 
             variants={itemReveal}
-            className="font-heading font-black uppercase text-6xl md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-white"
+            className="font-heading font-black uppercase text-5xl md:text-[6rem] lg:text-[8rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-white"
           >
             ABOUT <br /> ME.
           </motion.h2>
@@ -63,7 +63,7 @@ export default function HomeAbout() {
           {/* FIGLIO 3: La Descrizione */}
           <motion.p 
             variants={itemReveal}
-            className="text-justify font-sans text-white/80 text-lg md:text-xl max-w-xl leading-relaxed mb-10"
+            className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left max-w-l mb-20"
           >
            Sono uno studente al secondo anno del corso di Design del Prodotto Industriale all'Università degli Studi di Ferrara. <br /> Se il progetto ti è piaciuto ti invito a dare un'occhiata alla sezione about me per metterci in contatto!
           </motion.p>

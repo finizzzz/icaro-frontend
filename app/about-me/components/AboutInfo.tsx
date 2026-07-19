@@ -88,19 +88,11 @@ export default function AboutInfo() {
             CIAO!
           </h2>
           
-          <div className="font-sans text-neutral-300 text-base leading-relaxed text-justify space-y-8">
+          <div className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full">
             <p>
               Ho 21 anni, studio Design del Prodotto Industriale a Ferrara e aspiro a diventare un designer del prodotto e dei servizi. Sono un ragazzo entusiasta ed energico mosso da una grande curiosità che mi spinge sempre a mettermi alla prova nella vita con nuove sfide da superare.
-            </p>
-            
-            <div className="font-sans text-neutral-300 text-base leading-relaxed text-justify space-y-8">
-              <p className="text-neutral-300 font-medium">
-                Considero il design una disciplina di metodo, non un'illuminazione improvvisa: per questo fondo ogni progetto sulla ricerca. Sostituisco l'intuizione casuale con un processo iterativo rigoroso: dall'analisi del problema e dell'utente per poi passare allo studio dell'ergonomia, delle proprietà intrinseche dei materiali e dei processi manifatturieri, fino alla prototipazione.
-              </p>
-            </div>
-
-            <p>
-              Il mio obiettivo è governare le variabili di progetto per consegnare soluzioni concrete e altamente funzionali.
+          <br />Considero il design una disciplina di metodo, non un'illuminazione improvvisa: per questo fondo ogni progetto sulla ricerca. Sostituisco l'intuizione casuale con un processo iterativo rigoroso: dall'analisi del problema e dell'utente per poi passare allo studio dell'ergonomia, delle proprietà intrinseche dei materiali e dei processi manifatturieri, fino alla prototipazione.
+<br /> Il mio obiettivo è governare le variabili di progetto per consegnare soluzioni concrete e altamente funzionali.
             </p>
           </div>
         </motion.div>

@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Colonna 1: Branding */}
         <div>
           <h3 className="font-heading font-bold text-white text-2xl mb-4">Icaro.</h3>
-          <p className="font-sans text-neutral-400 text-sm max-w-xs text-justify">
+          <p className="font-sans text-neutral-400 text-sm max-w-xs text-left">
           Il progetto appena presentato è un concept di un prodotto innovativo contro il problema del caldo estremo nelle città. Si tratta di microrifugio climatico autonomo o add-on che sfrutta l'ombra come strumento per mitigare l'effetto isola di calore urbana, riqualificando l'arredo esistente o creando spazi prima inesistenti. 
           </p>
         </div>

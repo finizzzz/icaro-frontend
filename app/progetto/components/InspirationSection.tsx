@@ -79,12 +79,12 @@ export default function InspirationSection() {
           </motion.div>
 
           {/* CONTENITORE TESTI FOREGROUND */}
-          <div className="relative z-10 w-full md:w-2/3">
+          <div className="relative z-10 md:left-24 w-full md:w-2/3">
             
             {/* FIGLIO 3: Titolo Monumentale (Entra 0.4s dopo l'inizio) */}
             <motion.h3 
               variants={textReveal} 
-              className="font-heading font-black uppercase text-6xl md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-brand-dark"
+              className="font-heading font-black uppercase text-5xl md:text-[6rem] lg:text-[8rem] leading-[0.85] tracking-tighter mt-0 mb-8 text-brand-dark"
             >
               UNA SCELTA EFFICACE E <br /> SOSTENIBILE
             </motion.h3>
@@ -92,9 +92,9 @@ export default function InspirationSection() {
             {/* FIGLIO 4: Paragrafo (Entra 0.6s dopo l'inizio) */}
             <motion.p 
               variants={textReveal} 
-              className="font-sans text-brand-dark/80 text-lg md:text-xl max-w-xl leading-relaxed mb-10 text-left"
+              className="font-sans text-sm md:text-base leading-relaxed text-brand-dark drop-shadow-lg text-left max-w-2xl"
             >
-              Le antiche civiltà avevano già codificato ciò che i dati odierni confermano: l'ombra è la 'tecnologia' di raffrescamento passivo più antica e a impatto zero di cui disponiamo. È su questo ritorno alle origini che si fonda il nostro progetto. Durante i picchi termici estivi, ripararsi dalla radiazione diretta offre un vantaggio drastico: l'ombra abbatte la temperatura percepita fino a 15°C e impedisce alle superfici urbane di immagazzinare calore, spezzando di fatto il ciclo delle Isole di Calore.
+              Le antiche civiltà avevano già codificato ciò che i dati odierni confermano: l'ombra è la 'tecnologia' di raffrescamento passivo più antica e a impatto zero di cui disponiamo. <br />È su questo ritorno alle origini che si fonda il nostro progetto. Durante i picchi termici estivi, ripararsi dalla radiazione diretta offre un vantaggio drastico: l'ombra abbatte la temperatura percepita fino a 15°C e impedisce alle superfici urbane di immagazzinare calore, spezzando <br /> di fatto il ciclo delle Isole di Calore.
             </motion.p>
 
           </div>

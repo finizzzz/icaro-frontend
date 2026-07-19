@@ -54,7 +54,7 @@ export default function HomeProblem() {
             <p className="font-mono text-red-500 tracking-[0.3em] text-xs md:text-sm font-bold uppercase mb-6 md:mb-10">
               Emergenza Climatica
             </p>
-            <h2 className="font-heading font-black uppercase text-6xl md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-white">
+            <h2 className="font-heading font-black uppercase text-5xl md:text-[6rem] lg:text-[8rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-white">
               CALDO <br /> SEMPRE PIÙ <br /> INTENSO
             </h2>
           </motion.div>
@@ -65,9 +65,9 @@ export default function HomeProblem() {
             whileInView="show"
             viewport={{ once: true, margin: "-100px" }}
             transition={{ delay: 0.2 }}
-            className="max-w-xl"
+            className="max-w-2xl"
           >
-            <p className="text-justify font-sans text-white/80 text-lg md:text-xl max-w-xl leading-relaxed mb-10">
+            <p className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full mb-20">
               Le recenti ondate di calore trasformano le città in trappole termiche. Questo "lockdown climatico" colpisce duramente le popolazioni vulnerabili. Icaro interviene in questi vuoti, istituendo zone di decompressione termica.
             </p>
             

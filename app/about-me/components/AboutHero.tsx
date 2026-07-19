@@ -63,14 +63,14 @@ export default function AboutHero() {
         
         <motion.h1 
           variants={itemReveal}
-          className="font-heading font-black uppercase text-6xl md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-white"
+          className="font-heading font-black uppercase text-5xl md:text-[6rem] lg:text-[8rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-white"
         >
           Filippo.
         </motion.h1>
         
         <motion.p 
           variants={itemReveal}
-          className="text-justify font-sans text-white/80 text-lg md:text-xl max-w-xl leading-relaxed mb-10"
+          className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full"
         >
           Studente di Design del Prodotto
         </motion.p>

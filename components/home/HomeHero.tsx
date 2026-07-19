@@ -59,7 +59,7 @@ export default function HomeHero() {
         {/* Titolo Gigante */}
         <motion.h1 
           variants={itemVariants}
-          className="font-heading font-black text-6xl md:text-[7rem] lg:text-[9rem] text-white mb-4 text-left"
+          className="font-heading font-black text-5xl md:text-[6rem] lg:text-[8rem] text-white mb-6 text-left"
         >
           ICARO.
         </motion.h1>
@@ -71,7 +71,7 @@ export default function HomeHero() {
             ================================================================= */}
         <motion.p 
           variants={itemVariants}
-          className="font-sans text-xl md:text-xl text-white/90 max-w-2xl leading-relaxed mb-6 text-left"
+          className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full mb-20"
         >
          Dove il sole non arriva.
          Per una città più inclusiva.

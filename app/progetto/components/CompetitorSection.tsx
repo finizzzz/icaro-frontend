@@ -160,8 +160,8 @@ export default function HomeCompetitors() {
             <h3 className="font-heading font-black text-4xl md:text-5xl text-white mb-8">
               ICARO.
             </h3>
-            <p className="text-justify font-sans text-lg md:text-xl text-white/80 leading-relaxed mb-6">
-              Non sostituisce l'arredo esistente, ma lo evolve. Un modulo <strong className="text-white">Add-on per panchine pubbliche</strong> che permette all'utente di inclinare la copertura, garantendo ombra dinamica a basso costo e zero invasività urbana.
+            <p className="font-sans text-sm md:text-base leading-relaxed text-white drop-shadow-lg text-left w-full">
+              Non sostituisce l'arredo esistente, ma lo evolve. Un modulo Add-on per panchine pubbliche che permette all'utente di inclinare la copertura, garantendo ombra dinamica a basso costo e zero invasività urbana.
             </p>
           </div>
 

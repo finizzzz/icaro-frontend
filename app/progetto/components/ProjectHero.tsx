@@ -69,7 +69,7 @@ export default function ProjectHero() {
         {/* Figlio 3: Il nome del prodotto */}
         <motion.h1 
           variants={itemReveal}
-          className="font-heading font-black uppercase text-6xl md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-white"
+          className="font-heading font-black uppercase text-5xl md:text-[6rem] lg:text-[8rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-white"
         >
           Icaro.
         </motion.h1>
@@ -77,7 +77,7 @@ export default function ProjectHero() {
         {/* Figlio 4: Il paragrafo descrittivo */}
         <motion.p 
           variants={itemReveal}
-          className="text-justify font-sans text-white/80 text-lg md:text-xl max-w-xl leading-relaxed mb-10"
+          className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full"
         >
           Un parasole pubblico innovativo progettato per riqualificare gli spazi pubblici già esistenti in nuove zone d'ombra.
         </motion.p>
