@@ -33,7 +33,7 @@ export default function MaterialsSection() {
   const txtY = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
   return (
-    <section ref={containerRef} id="materiali" className="relative h-[1000vh] bg-black">
+    <section ref={containerRef} id="materiali" className="relative h-[1200vh] bg-black">
       
       <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
         
