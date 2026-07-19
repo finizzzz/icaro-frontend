@@ -91,8 +91,7 @@ export default function AboutInfo() {
           <div className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full">
             <p>
               Ho 21 anni, studio Design del Prodotto Industriale a Ferrara e aspiro a diventare un designer del prodotto e dei servizi. Sono un ragazzo entusiasta ed energico mosso da una grande curiosità che mi spinge sempre a mettermi alla prova nella vita con nuove sfide da superare.
-          <br />Considero il design una disciplina di metodo, non un'illuminazione improvvisa: per questo fondo ogni progetto sulla ricerca. Sostituisco l'intuizione casuale con un processo iterativo rigoroso: dall'analisi del problema e dell'utente per poi passare allo studio dell'ergonomia, delle proprietà intrinseche dei materiali e dei processi manifatturieri, fino alla prototipazione.
-<br /> Il mio obiettivo è governare le variabili di progetto per consegnare soluzioni concrete e altamente funzionali.
+              Credo fermamente che il fine ultimo dell’innovazione sia migliorare la vita delle persone, modellando un futuro più funzionale e consapevole. Per perseguire questo obiettivo, sono convinto che il successo di un progetto non possa affidarsi esclusivamente al 'colpo di genio', una scommessa troppo rischiosa senza fondamenta. La buona progettazione, per me, non inizia dalla ricerca dell’idea, ma dall’analisi dei problemi. Solo attraverso queste basi solide è possibile sviluppare prodotti che siano funzionali e orientati all'utente. Questo è il metodo che ho imparato, che applico in ogni mia sfida progettuale e che desidero mettere in pratica nella mia carriera professionale.
             </p>
           </div>
         </motion.div>

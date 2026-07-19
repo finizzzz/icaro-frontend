@@ -50,7 +50,7 @@ export default function MaterialsSection() {
         </div>
 
         {/* --- OVERLAY GRAFICI --- */}
-        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="absolute top-0 inset-x-0 h-48 bg-gradient-to-b from-black to-transparent z-10" />
         
         {/* --- I TESTI (Struttura Z-Pattern con Gabbia Allargata e Font Ridotto) --- */}
@@ -63,7 +63,7 @@ export default function MaterialsSection() {
             <h3 className="font-heading font-bold text-4xl md:text-5xl text-white text-left mb-8">Tessuto Soltis 92</h3>
             {/* MODIFICA: text-sm md:text-base cambiato in text-xs md:text-sm per rimpicciolire il carattere */}
             <p className="font-sans text-xs md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full">
-              Per la copertura, i laterali e le maniglie di regolazione abbiamo adottato un telone in poliestere spalmato in PVC bianco con una trama forata. In particolare il tessuto Soltis 92 che agisce come un dispositivo di gestione microclimatica passiva ad altissima efficienza. La sua microforatura ingegnerizzata, unita alla colorazione bianca che ne massimizza l'albedo, permette di respingere fino al 97% dell'energia termica solare. Questa porosità strutturale blocca l'irraggiamento diretto ma garantisce la continua permeabilità all'aria, permettendo al calore di dissiparsi naturalmente verso l'alto. Questa dinamica termofluidodinamica azzera l'effetto serra tipico dei teli a trama chiusa e abbatte drasticamente la temperatura percepita dall'utente sotto la struttura, ottimizzando il comfort termico senza compromettere la luminosità e il contatto visivo con l'ambiente circostante.
+              Per la copertura, i laterali e le maniglie di regolazione abbiamo adottato un telone in poliestere spalmato in PVC bianco con una trama forata. In particolare il tessuto Soltis 92 che agisce come un dispositivo di gestione microclimatica passiva ad altissima efficienza. La sua microforatura ingegnerizzata, unita alla colorazione bianca che ne massimizza l'albedo, permette di respingere fino al 97% dell'energia termica solare. Questa porosità strutturale blocca l'irraggiamento diretto ma garantisce la continua permeabilità all'aria, permettendo al calore di dissiparsi naturalmente verso l'alto. Questa termofluidodinamica azzera l'effetto serra tipico dei teli a trama chiusa e abbatte drasticamente la temperatura percepita dall'utente sotto la struttura, ottimizzando il comfort termico senza compromettere la luminosità e il contatto visivo con l'ambiente circostante.
             </p>
           </motion.div>
 

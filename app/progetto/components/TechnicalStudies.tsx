@@ -52,7 +52,7 @@ export default function EngineeringSection() {
           fill 
           className="object-contain" 
           quality={100} 
-          sizes="100vw"
+          sizes="110vw"
         />
       </motion.div>
 
