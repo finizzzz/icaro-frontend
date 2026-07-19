@@ -32,7 +32,7 @@ export default function FinalProject() {
           alt="Parasole pubblico installato su panchina" 
           fill 
           className="object-cover opacity-80" // opacity-80 incupisce leggermente la foto
-          unoptimized 
+          priority={true}
         />
       </motion.div>
 

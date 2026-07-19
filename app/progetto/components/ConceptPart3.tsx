@@ -43,6 +43,7 @@ export default function ConceptPart3() {
               quality={100} 
               sizes="(max-width: 768px) 100vw, 60vw" 
               className="object-cover opacity-80" 
+              priority={true}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent hidden md:block" />
           </div>

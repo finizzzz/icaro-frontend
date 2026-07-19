@@ -49,7 +49,7 @@ export default function ProblemSection() {
         {/* Aggiunto style={{ scale: imgScale, y: imgY }} a tutte le immagini */}
         
         <motion.div style={{ scale: imgScale, y: imgY }} className="absolute inset-0 z-[1]">
-          <Image src="/panchina-assolata-1-new.avif" alt="Panchina al sole" fill className="object-cover" unoptimized priority />
+          <Image src="/panchina-assolata-1-new.avif" alt="Panchina al sole" fill className="object-cover" priority={true} />
         </motion.div>
         
         <motion.div style={{ opacity: img2Opacity, scale: imgScale, y: imgY }} className="absolute inset-0 z-[2]">

@@ -34,6 +34,7 @@ export default function ConceptPart1() {
           muted
           playsInline
           className="w-full h-full object-cover opacity-80"
+          preload="auto"
         >
           <source src="/video-movimento-progetto.mp4" type="video/mp4" />
         </video>

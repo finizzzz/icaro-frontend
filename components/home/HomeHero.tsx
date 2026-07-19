@@ -37,9 +37,10 @@ export default function HomeHero() {
           loop
           muted
           playsInline
+          preload="auto" 
           className="w-full h-full object-cover opacity-80"
         >
-          <source src="/video-cutted.mp4" type="video/mp4" />
+          <source src="/video-cutted.mp4" type="video/mp4"/>
         </video>
       </div>
 

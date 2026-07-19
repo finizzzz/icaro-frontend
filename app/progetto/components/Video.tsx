@@ -41,6 +41,7 @@ export default function Video() {
           muted          
           playsInline    
           className="w-full h-full object-cover opacity-70" 
+          preload="auto"
         >
           {/* Il file deve risiedere in /public/video-movimento-progetto.mp4 */}
           <source src="/video-movimento-progetto.mp4" type="video/mp4" />

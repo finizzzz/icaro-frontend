@@ -36,6 +36,7 @@ export default function HomeProblem() {
           alt="Foto termica Isola di Calore"
           fill
           className="object-cover"
+          priority={true}
         />
         {/* Il gradiente ora deve estendersi per sfumare l'immagine verso il nero della sezione */}
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"></div>

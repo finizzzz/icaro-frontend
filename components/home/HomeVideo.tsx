@@ -30,6 +30,7 @@ export default function HomeVideo() {
         preload="auto"
         onTimeUpdate={handleTimeUpdate} 
         className="absolute inset-0 w-full h-full object-cover z-0 opacity-90" 
+      
       >
         <source src="/video-movimento-cut.mp4" type="video/mp4" />
       </video>

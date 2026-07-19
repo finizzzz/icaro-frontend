@@ -49,7 +49,7 @@ export default function AboutInfo() {
           {/* FIGLIO 2: Card Identità */}
           <motion.div variants={itemReveal} className="bg-neutral-900/50 border border-white/10 rounded-3xl p-6 flex flex-col gap-6 h-full">
             <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
-              <Image src="/me.avif" alt="Ritratto" fill className="object-cover" />
+              <Image src="/me.avif" alt="Ritratto" fill className="object-cover" priority={true}/>
             </div>
             
             <div className="space-y-8 font-mono text-xs text-neutral-400 flex-1">
