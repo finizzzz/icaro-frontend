@@ -13,7 +13,7 @@ export default function HomeQualities() {
 
   const imageReveal: Variants = {
     hidden: { opacity: 0, scale: 1.1 },
-    show: { opacity: 0.6, scale: 1, transition: { duration: 1.5, ease: "easeOut" } } 
+    show: { opacity: 0.4, scale: 1, transition: { duration: 1.5, ease: "easeOut" } } 
   };
 
   return (
@@ -95,7 +95,7 @@ export default function HomeQualities() {
         <div className="relative min-h-[70vh] flex items-center justify-start mb-24 md:mb-32">
           <motion.div 
             variants={imageReveal} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}
-            className="absolute right-0 md:right-[30%] lg:right-[0%] top-[-10%] md:top-[-50%] lg:top-[-25%] w-[100%] md:w-[80%] lg:w-[70%] aspect-square grayscale z-0 pointer-events-none opacity-30 lg:opacity-100"
+            className="absolute right-0 md:right-[30%] lg:right-[10%] top-[-10%] md:top-[-30%] lg:top-[-30%] w-[100%] md:w-[70%] lg:w-[60%] aspect-square grayscale z-0 pointer-events-none opacity-30 lg:opacity-100"
           >
             <Image src="/new-4.avif" alt="Installazione" fill className="object-contain object-center" />
           </motion.div>

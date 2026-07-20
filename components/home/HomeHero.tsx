@@ -72,7 +72,7 @@ export default function HomeHero() {
             ================================================================= */}
         <motion.p 
           variants={itemVariants}
-          className="font-sans text-sm md:text-2xl leading-relaxed text-white/80 drop-shadow-lg text-left w-full mb-10"
+          className="font-sans text-sm md:text-xl leading-relaxed text-white/80 drop-shadow-lg text-left w-full mb-10"
         >
          Dove il sole non arriva.
         </motion.p>

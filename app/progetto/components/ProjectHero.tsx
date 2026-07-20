@@ -77,7 +77,7 @@ export default function ProjectHero() {
         {/* Figlio 4: Il paragrafo descrittivo */}
         <motion.p 
           variants={itemReveal}
-          className="font-sans text-sm md:text-2xl leading-relaxed text-white/80 drop-shadow-lg text-left w-full"
+          className="font-sans text-sm md:text-xl leading-relaxed text-white/80 drop-shadow-lg text-left w-full"
         >
           Un parasole pubblico innovativo progettato per <br />riqualificare gli spazi pubblici già esistenti in nuove zone d'ombra.
         </motion.p>
