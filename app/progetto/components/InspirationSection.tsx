@@ -92,9 +92,9 @@ export default function InspirationSection() {
             {/* FIGLIO 4: Paragrafo (Entra 0.6s dopo l'inizio) */}
             <motion.p 
               variants={textReveal} 
-              className="font-sans text-sm md:text-base leading-relaxed text-brand-dark drop-shadow-lg text-left max-w-2xl lg:max-w-l"
+              className="font-sans text-sm md:text-xl leading-relaxed text-brand-dark drop-shadow-lg text-left max-w-2xl lg:max-w-l"
             >
-              Le antiche civiltà avevano già codificato ciò che i dati odierni confermano: l'ombra è la 'tecnologia' di raffrescamento passivo più antica e a impatto zero di cui disponiamo. <br />È su questo ritorno alle origini che si fonda il nostro progetto. Durante i picchi termici estivi, ripararsi dalla radiazione diretta offre un vantaggio drastico: l'ombra abbatte la temperatura percepita fino a 15°C e impedisce alle superfici urbane di immagazzinare calore, spezzando <br /> di fatto il ciclo delle Isole di Calore.
+              Le antiche civiltà avevano già codificato ciò che i dati odierni confermano: l'ombra è la 'tecnologia' di raffrescamento passivo più antica e a impatto zero di cui disponiamo. <br />È su questo ritorno alle origini che si fonda il progetto. Durante i picchi termici estivi, ripararsi dalla radiazione diretta offre un vantaggio drastico: l'ombra abbatte la temperatura percepita fino a 15°C e impedisce alle superfici urbane di immagazzinare calore, spezzando di fatto il ciclo delle Isole di Calore.
             </motion.p>
 
           </div>

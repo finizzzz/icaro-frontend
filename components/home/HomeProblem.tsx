@@ -70,8 +70,8 @@ export default function HomeProblem() {
             transition={{ delay: 0.2 }}
             className="max-w-2xl"
           >
-            <p className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full mb-20">
-              Le recenti ondate di calore trasformano le città in trappole termiche. Questo "lockdown climatico" colpisce duramente le popolazioni vulnerabili. Icaro interviene in questi vuoti, istituendo zone di decompressione termica.
+            <p className="font-sans text-sm md:text-xl leading-relaxed text-white/80 drop-shadow-lg text-left w-full mb-20">
+              Le recenti ondate di calore trasformano le città in trappole termiche. Questo "lockdown climatico" colpisce duramente le popolazioni vulnerabili. Icaro interviene in questa situazione istituendo zone fresche che mirano a rivalorizzare il tessuto urbano nonostante le alte temperature.
             </p>
             
             <a 

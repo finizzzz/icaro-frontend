@@ -60,7 +60,7 @@ export default function HomeHero() {
         {/* Titolo Gigante */}
         <motion.h1 
           variants={itemVariants}
-          className="font-heading font-black text-5xl md:text-[6rem] lg:text-[8rem] text-white mb-6 text-left"
+          className="font-heading font-black text-5xl md:text-[6rem] lg:text-[8rem] text-white mb-2 text-left"
         >
           ICARO.
         </motion.h1>
@@ -72,11 +72,24 @@ export default function HomeHero() {
             ================================================================= */}
         <motion.p 
           variants={itemVariants}
-          className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full mb-20"
+          className="font-sans text-sm md:text-2xl leading-relaxed text-white/80 drop-shadow-lg text-left w-full mb-10"
         >
          Dove il sole non arriva.
-         Per una città più inclusiva.
         </motion.p>
+
+                {/* =================================================================
+            MODIFICA 2: IL SOTTOTITOLO
+            - Rimosso "text-justify hyphens-auto".
+            - Inserito "text-left" per allineare tutto a bandiera a sinistra.
+            ================================================================= */}
+        <motion.p 
+          variants={itemVariants}
+          className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full mb-10"
+        >
+         Un parasole pubblico innovativo progettato per
+         riqualificare <br /> gli spazi pubblici già esistenti in nuove zone d'ombra.
+        </motion.p>
+
 
         {/* =================================================================
             MODIFICA 3: IL BOTTONE

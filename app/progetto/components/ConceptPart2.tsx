@@ -26,7 +26,7 @@ export default function HomeVariantsDark() {
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-8">
             Due soluzioni, una visione.
           </h2>
-          <p className="font-sans text-sm md:text-base text-white/80 mx-auto">
+          <p className="font-sans text-sm md:text-xl text-white/80 mx-auto">
             Icaro è un'infrastruttura democratica, progettata per adattarsi organicamente alle diverse esigenze urbane.
           </p>
         </motion.div>

@@ -89,7 +89,7 @@ export default function EngineeringSection() {
           
           <motion.p 
             variants={itemReveal}
-            className="font-sans text-sm md:text-base leading-relaxed text-brand-dark/80 drop-shadow-lg text-left w-full"
+            className="font-sans text-sm md:text-xl leading-relaxed text-brand-dark/80 drop-shadow-lg text-left w-full"
           >
             Il footprint compatto (700x2200 mm) si integra all'arredo urbano senza intralciare i pedoni, massimizzando l'ombra con uno sbalzo di 1620 mm. A livello ergonomico, il fulcro cinematico a 1050 mm è biomeccanicamente calcolato per un azionamento fluido del riduttore, sia in piedi che da seduti.
           </motion.p>

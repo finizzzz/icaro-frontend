@@ -63,7 +63,7 @@ export default function HomeAbout() {
           {/* FIGLIO 3: La Descrizione */}
           <motion.p 
             variants={itemReveal}
-            className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left max-w-l mb-20"
+            className="font-sans text-sm md:text-xl leading-relaxed text-white/80 drop-shadow-lg text-left max-w-xl mb-20"
           >
            Sono uno studente al secondo anno del corso di Design del Prodotto Industriale all'Università degli Studi di Ferrara. <br /> Se il progetto ti è piaciuto ti invito a dare un'occhiata alla sezione about me per metterci in contatto!
           </motion.p>

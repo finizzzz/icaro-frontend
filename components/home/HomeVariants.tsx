@@ -59,7 +59,7 @@ export default function HomeVariants() {
           {/* FIGLIO 2: Entra a 0.2s */}
           <motion.p 
             variants={itemReveal}
-            className="font-sans text-sm md:text-base leading-relaxed text-brand-dark/80 drop-shadow-lg text-center w-full"
+            className="font-sans text-sm md:text-xl leading-relaxed text-brand-dark/80 drop-shadow-lg text-center w-full"
           >
             Icaro è un'infrastruttura democratica, progettata per adattarsi organicamente alle diverse esigenze urbane.
           </motion.p>
