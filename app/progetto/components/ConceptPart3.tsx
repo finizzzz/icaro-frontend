@@ -76,7 +76,7 @@ export default function ConceptPart3() {
         >
           <div className="absolute inset-0 md:relative md:w-3/5 md:h-full bg-neutral-900 overflow-hidden z-0">
             <Image 
-              src="/manovella.avif" 
+              src="/mano.avif" 
               alt="Meccanismo a manopola" 
               fill 
               quality={100}

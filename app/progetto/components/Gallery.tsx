@@ -11,7 +11,7 @@ export default function Gallery() {
   const images = [
     "/g1.avif", "/new-2.avif", "/g3.avif", "/new-4.avif", "/g5.avif",
     "/g6.avif", "/g7.avif", "/g8.avif", "/g9.avif", "/cerniere.avif",
-    "/manovella.avif", "/g12.avif"
+    "/mano.avif", "/g12.avif"
   ];
 
   // 2. LOGICA D'INDICE AUTOMATICA: Usa images.length dinamico. 

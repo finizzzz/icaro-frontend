@@ -99,10 +99,9 @@ export default function MaterialsSection() {
             <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">05. Superfici</p>
             <h3 className="font-heading font-bold text-4xl md:text-5xl text-white text-left mb-8">Legno di Teak</h3>
             <p className="font-sans text-xs md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full">
-              Per il piano di seduta la scelta è ricaduta sul massello di teak, un'essenza la cui naturale saturazione di oleoresine la rende idrorepellente, imputrescibile e a zero manutenzione. L'eccellente stabilità fibrillare assorbe i carichi e lo stress ambientale senza imbarcarsi o scheggiarsi. A livello di ergonomia fisica, la bassa conduttività termica del legno garantisce un comfort tattile costante, impedendo il surriscaldamento estivo o il gelo invernale. Con l'esposizione ai raggi UV, il massello innesca una fisiologica ossidazione superficiale virando verso un caratteristico grigio argento: un'evoluzione materica che arricchisce l'oggetto, creando un calibrato contrasto organico con il rigore tecnico dell'alluminio e dell'acciaio.
+              Per il piano di seduta la scelta è ricaduta sul massello di teak, un'essenza la cui naturale saturazione di oleoresine la rende idrorepellente, imputrescibile e a zero manutenzione. L'eccellente stabilità fibrillare assorbe i carichi e lo stress ambientale senza imbarcarsi o scheggiarsi. A livello di ergonomia fisica, la bassa conduttività termica del legno garantisce un comfort tattile costante, impedendo il surriscaldamento estivo o il gelo invernale.
             </p>
           </motion.div>
-
           {/* TESTO 06: STRUTTURA */}
           <motion.div style={{ opacity: txt6Op, y: txtY }} className="absolute w-4/5 md:max-w-2xl left-5 md:left-16 text-white">
             <p className="font-mono text-white tracking-[0.2em] text-sm font-bold uppercase mb-4 drop-shadow-md">06. Struttura</p>
