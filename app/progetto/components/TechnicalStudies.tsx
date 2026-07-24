@@ -1,100 +1,106 @@
-// app/progetto/components/EngineeringSection.tsx
+// app/progetto/components/TechnicalStudies.tsx
 "use client";
 
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
 
-export default function EngineeringSection() {
-  
-  // 1. IL DIRETTORE D'ORCHESTRA (Invariato)
-  const masterContainer: Variants = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: { staggerChildren: 0.2 }
-    }
-  };
+export default function TechnicalStudies() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  // 2. LA "FISICA" UNIVERSALE DEL TESTO (Invariato)
-  const itemReveal: Variants = {
-    hidden: { opacity: 0, y: 50 },
-    show: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } 
-    }
-  };
+  /* 
+    L'ARRAY DICHIARATIVO PURO (Solo Quote):
+    Rimossi i render come richiesto. Sequenza da 1 a 12.
+  */
+  const images = [
+    "/q1.avif",
+    "/q2.avif",
+    "/q3.avif",
+    "/q4.avif",
+    "/q5.avif",
+    "/q6.avif",
+    "/q7.avif",
+    "/q8.avif",
+    "/q9.avif",
+    "/q10.avif",
+    "/q11.avif",
+    "/q12.avif"
+  ];
 
-  // 3. L'EFFETTO "OLOGRAMMA" PER IL BLUEPRINT (Invariato)
-  const blueprintReveal: Variants = {
-    hidden: { opacity: 0, scale: 0.98 },
-    show: { 
-      opacity: 0.8, 
-      scale: 1, 
-      transition: { duration: 1.5, ease: "easeOut" } 
-    }
-  };
+  // LOGICA D'INDICE AUTOMATICA
+  const next = () => setCurrentIndex((prev) => (prev + 1) % images.length);
+
+  useEffect(() => {
+    // Timer a 5 secondi (ottimale per lettura quote)
+    const timer = setInterval(next, 5000);
+    return () => clearInterval(timer);
+  }, [currentIndex]); 
 
   return (
-    <section id="ingegneria" className="relative w-full h-[100dvh] overflow-hidden bg-[#F9F9F9]">
+    // Sfondo chiaro, altezza 100% della viewport
+    <section id="ingegneria" className="relative h-[100dvh] w-full bg-[#F9F9F9] overflow-hidden flex flex-col justify-between">
       
-      {/* IL BACKGROUND ANIMATO (Invariato) */}
-      <motion.div 
-        variants={blueprintReveal}
-        initial="hidden"
-        whileInView="show"
+      {/* HEADER DELLA GALLERIA (Livello 20) */}
+      <motion.header 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
-        className="absolute inset-0 z-0 mb-100 md:mb-0"
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative z-20 pt-32 md:pt-50 px-6 md:px-30 pointer-events-none"
       >
-        <Image 
-          src="/quote.png" 
-          alt="Blueprint Quote e Ingombri" 
-          fill 
-          className="object-contain" 
-          quality={100} 
-          sizes="110vw"
-        />
-      </motion.div>
+        <p className="font-mono text-brand-dark tracking-[0.3em] text-xs md:text-sm font-bold uppercase drop-shadow-md">
+          Disegni Quotati
+        </p>
+      </motion.header>
 
-      {/* IL CONTENITORE DELLA COREOGRAFIA TESTUALE */}
-      <div className="absolute inset-0 z-20 flex flex-col items-end text-left p-6 md:p-16 lg:p-24 w-full pointer-events-none">
-        
-        {/* 
-          IL BLOCCO DI TESTO ALLINEATO IN BASSO
-          MODIFICHE APPLICATE:
-          1. items-end -> items-start: Allinea perfettamente a sinistra l'occhiello, il titolo e il testo.
-          2. Aggiunto md:mr-12 lg:mr-20: Sposta fisicamente l'intera gabbia verso sinistra, allontanandola dal bordo.
-        */}
-        <motion.div 
-          variants={masterContainer}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, margin: "-100px" }}
-          className="mt-auto flex flex-col items-start w-full max-w-2xl pointer-events-auto md:mr-12 lg:mr-30"
-        >
-          
-          <motion.p 
-            variants={itemReveal}
-            className="font-mono text-brand-primary tracking-[0.3em] text-xs md:text-sm font-bold uppercase mb-0"
+      {/* 
+        BACKGROUND SCORREVOLE 
+        MODIFICHE APPLICATE:
+        1. Aggiunti pt-40 pb-24: Tengono l'immagine lontana dal titolo in alto e dai trattini in basso.
+        2. px-4 md:px-16: Impediscono all'immagine di toccare i bordi laterali dello schermo.
+      */}
+      <div className="absolute inset-0 z-0 flex items-center justify-center pt-40 pb-24 px-4 md:px-16">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="relative h-full w-full"
           >
-            Quote
-          </motion.p>
-          
-          <motion.h2 
-            variants={itemReveal}
-            className="font-heading font-black uppercase text-5xl md:text-[6rem] lg:text-[8rem] leading-[0.85] tracking-tighter mt-4 mb-8 text-brand-dark"
-          >
-            INGOMBRO.
-          </motion.h2>
-          
-          <motion.p 
-            variants={itemReveal}
-            className="font-sans text-sm md:text-xl leading-relaxed text-brand-dark/80 drop-shadow-lg text-left w-full"
-          >
-            Il footprint compatto (700x2200 mm) si integra all'arredo urbano senza intralciare i pedoni, massimizzando l'ombra con uno sbalzo di 1620 mm. A livello ergonomico, il fulcro cinematico a 1050 mm è biomeccanicamente calcolato per un azionamento fluido del riduttore, sia in piedi che da seduti.
-          </motion.p>
-          
-        </motion.div>
+            <Image
+              src={images[currentIndex]}
+              alt={`Specifica tecnica Icaro - Tavola ${currentIndex + 1}`}
+              fill
+              quality={100}
+              sizes="100vw"
+              // FONDAMENTALE: object-contain garantisce che il disegno non venga mai tagliato
+              className="object-contain"
+            />
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      {/* BARRA DI NAVIGAZIONE A 12 SEGMENTI */}
+      <div className="relative z-20 w-full px-6 md:px-16 pb-8 md:pb-12">
+        <div className="flex gap-2 items-center w-full max-w-5xl mx-auto h-12 group">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className="flex-1 h-full flex items-center justify-center cursor-pointer opacity-30 hover:opacity-100 transition-opacity"
+            >
+              <span 
+                className={`w-full transition-all duration-300 rounded-full ${
+                  currentIndex === index 
+                    ? "bg-brand-dark h-2 md:h-[6px]" 
+                    : "bg-brand-dark/40 h-[2px] group-hover:h-[4px]" 
+                }`}
+              />
+            </button>
+          ))}
+        </div>
       </div>
 
     </section>
