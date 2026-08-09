@@ -90,8 +90,11 @@ export default function AboutInfo() {
           
           <div className="font-sans text-sm md:text-base leading-relaxed text-white/80 drop-shadow-lg text-left w-full">
             <p>
-              Ho 21 anni, studio Design del Prodotto Industriale a Ferrara e aspiro a diventare un designer del prodotto e dei servizi. Sono un ragazzo entusiasta ed energico mosso da una grande curiosità che mi spinge sempre a mettermi alla prova nella vita con nuove sfide da superare.
-              Credo fermamente che il fine ultimo dell’innovazione sia migliorare la vita delle persone, modellando un futuro più funzionale e consapevole. Per perseguire questo obiettivo, sono convinto che il successo di un progetto non possa affidarsi esclusivamente al 'colpo di genio', una scommessa troppo rischiosa senza fondamenta. La buona progettazione, per me, non inizia dalla ricerca dell’idea, ma dall’analisi dei problemi. Solo attraverso queste basi solide è possibile sviluppare prodotti che siano funzionali e orientati all'utente. Questo è il metodo che ho imparato, che applico in ogni mia sfida progettuale e che desidero mettere in pratica nella mia carriera professionale.
+            Ho 21 anni, studio Design del Prodotto Industriale a Ferrara e aspiro a diventare un designer del prodotto e dei servizi. Sono un ragazzo entusiasta ed energico mosso da una grande curiosità che mi spinge sempre a mettermi alla prova nella vita con nuove sfide da superare. 
+Sono alla ricerca di una realtà in cui svolgere tirocinio e fare esperienza diretta all’interno di un’azienda.
+Il mio obiettivo è di poter interfacciarsi con le dinamiche della produzione e approfondire come le diverse funzioni aziendali collaborino tra loro durante il processo di sviluppo. Vorrei mettere le mie conoscenze e il mio metodo progettuale a disposizione per contribuire attivamente allo sviluppo dei vostri progetti.
+Credo fortemente che il fine ultimo dell’innovazione sia migliorare la vita delle persone. Per perseguire questo obiettivo, sono convinto che il successo di un progetto non possa affidarsi esclusivamente al 'colpo di genio' ma debba fondarsi su delle basi solide. Per questo reputo fondamentale la ricerca alla base di ogni lavoro. Questo è il metodo che ho imparato, che applico in ogni mia sfida progettuale e che desidero mettere in pratica nella mia carriera professionale. 
+
             </p>
           </div>
         </motion.div>
