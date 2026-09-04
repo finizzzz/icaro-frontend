@@ -110,7 +110,7 @@ Credo fortemente che il fine ultimo dell’innovazione sia migliorare la vita de
               {['Modellazione 3D', 'Fotogrammetria', 'Ricerca', 'Design Centrato sull\'Utente', 'Conceptual Sketching', 'Scienza dei Materiali', 'Rendering', 'Prototipazione Rapida', 'Stampa 3D', 'Ergonomia', 'Processi Produttivi', 'Basi di Coding', 'HTML', 'CSS', 'JavaScript', 'Excel'].map(skill => (
                 <span key={skill} className="px-3 py-1 bg-brand-primary/20 text-brand-primary border border-brand-primary/30 rounded-full text-[10px] uppercase font-mono tracking-wider">{skill}</span>
               ))}
-              {['Pensiero Creativo', 'Problem Solving', 'Lavoro di Squadra', 'Precisione', 'Dedizione', 'Curiosità', 'Determinazione', 'Metodologia', 'Voglia di Fare', 'Gestione dello Stress', 'Decisione', 'Meticolosità'].map(skill => (
+              {['Pensiero Creativo', 'Problem Solving', 'Lavoro di Squadra', 'Precisione', 'Dedizione', 'Curiosità', 'Determinazione', 'Metodologia', 'Gestione dello Stress', 'Decisione'].map(skill => (
                 <span key={skill} className="px-3 py-1 bg-white/5 text-neutral-300 border border-white/10 rounded-full text-[10px] uppercase font-mono tracking-wider">{skill}</span>
               ))}
             </div>
