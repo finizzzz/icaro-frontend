@@ -1,8 +1,9 @@
 // app/about-me/components/AboutInfo.tsx
 "use client";
 import Image from "next/image";
-import { Mail, Phone } from "lucide-react";
+//import { Mail, Phone } from "lucide-react";
 import { motion, Variants } from "framer-motion";
+import { Mail, Phone } from "lucide-react";
 
 export default function AboutInfo() {
   
@@ -49,7 +50,7 @@ export default function AboutInfo() {
           {/* FIGLIO 2: Card Identità */}
           <motion.div variants={itemReveal} className="bg-neutral-900/50 border border-white/10 rounded-3xl p-6 flex flex-col gap-6 h-full">
             <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
-              <Image src="/me.avif" alt="Ritratto" fill className="object-cover" priority={true}/>
+              <Image src="/me.jpg" alt="Ritratto" fill className="object-cover" priority={true}/>
             </div>
             
             <div className="space-y-8 font-mono text-xs text-neutral-400 flex-1">
@@ -93,7 +94,7 @@ export default function AboutInfo() {
             Ho 21 anni, studio Design del Prodotto Industriale a Ferrara e aspiro a diventare un designer del prodotto e dei servizi. Sono un ragazzo entusiasta ed energico mosso da una grande curiosità che mi spinge sempre a mettermi alla prova nella vita con nuove sfide da superare. 
 Sono alla ricerca di una realtà in cui svolgere tirocinio e fare esperienza diretta all’interno di un’azienda.
 Il mio obiettivo è di poter interfacciarsi con le dinamiche della produzione e approfondire come le diverse funzioni aziendali collaborino tra loro durante il processo di sviluppo. Vorrei mettere le mie conoscenze e il mio metodo progettuale a disposizione per contribuire attivamente allo sviluppo dei vostri progetti.
-Credo fortemente che il fine ultimo dell’innovazione sia migliorare la vita delle persone. Per perseguire questo obiettivo, sono convinto che il successo di un progetto non possa affidarsi esclusivamente al 'colpo di genio' ma debba fondarsi su delle basi solide. Per questo reputo fondamentale la ricerca alla base di ogni lavoro. Questo è il metodo che ho imparato, che applico in ogni mia sfida progettuale e che desidero mettere in pratica nella mia carriera professionale. 
+Credo fortemente che il fine ultimo dell’innovazione sia migliorare la vita delle persone. Per perseguire questo obiettivo, sono convinto che il successo di un progetto non possa affidarsi esclusivamente al colpo di genio ma debba fondarsi su delle basi solide. Per questo reputo fondamentale la ricerca alla base di ogni lavoro. Questo è il metodo che ho imparato, che applico in ogni progetto e che desidero mettere in pratica nella mia carriera professionale. 
 
             </p>
           </div>
@@ -106,10 +107,10 @@ Credo fortemente che il fine ultimo dell’innovazione sia migliorare la vita de
           <motion.div variants={itemReveal} className="bg-neutral-900/50 border border-white/10 rounded-3xl p-6">
             <h3 className="font-mono text-neutral-500 uppercase tracking-widest text-xs mb-2 font-bold">Hard & Soft Skills</h3>
             <div className="flex flex-wrap gap-2">
-              {['Modellazione 3D', 'Fotogrammetria', 'Ricerca', 'Design Centrato sull\'Utente', 'Conceptual Sketching', 'Scienza dei Materiali', 'Rendering', 'Prototipazione Rapida', 'Stampa 3D', 'Ergonomia', 'Processi Produttivi'].map(skill => (
+              {['Modellazione 3D', 'Fotogrammetria', 'Ricerca', 'Design Centrato sull\'Utente', 'Conceptual Sketching', 'Scienza dei Materiali', 'Rendering', 'Prototipazione Rapida', 'Stampa 3D', 'Ergonomia', 'Processi Produttivi', 'Basi di Coding', 'HTML', 'CSS', 'JavaScript', 'Excel'].map(skill => (
                 <span key={skill} className="px-3 py-1 bg-brand-primary/20 text-brand-primary border border-brand-primary/30 rounded-full text-[10px] uppercase font-mono tracking-wider">{skill}</span>
               ))}
-              {['Pensiero Creativo', 'Problem Solving', 'Lavoro di Squadra', 'Precisione', 'Dedizione', 'Curiosità', 'Determinazione', 'Costanza', 'Metodologia', 'Voglia di Fare', 'Diplomazia', 'Decisione', 'Meticolosità'].map(skill => (
+              {['Pensiero Creativo', 'Problem Solving', 'Lavoro di Squadra', 'Precisione', 'Dedizione', 'Curiosità', 'Determinazione', 'Metodologia', 'Voglia di Fare', 'Gestione dello Stress', 'Decisione', 'Meticolosità'].map(skill => (
                 <span key={skill} className="px-3 py-1 bg-white/5 text-neutral-300 border border-white/10 rounded-full text-[10px] uppercase font-mono tracking-wider">{skill}</span>
               ))}
             </div>
@@ -117,26 +118,26 @@ Credo fortemente che il fine ultimo dell’innovazione sia migliorare la vita de
 
           {/* FIGLIO 5: Cella Software */}
           <motion.div variants={itemReveal} className="bg-neutral-900/50 border border-white/10 rounded-3xl p-6">
-            <h3 className="font-mono text-neutral-500 uppercase tracking-widest text-xs mb-2 font-bold">Toolstack</h3>
+            <h3 className="font-mono text-neutral-500 uppercase tracking-widest text-xs mb-2 font-bold">Programmi</h3>
             <div className="flex flex-wrap gap-2">
-              {['Fusion360', 'AutoCAD', 'Blender', 'Illustrator', 'Photoshop', 'Indesign', 'Twinmotion', 'Metashape', 'Figma', 'Siemens Jack'].map(tool => (
+              {['Fusion360', 'AutoCAD', 'Blender', 'Illustrator', 'Photoshop', 'Indesign', 'Twinmotion', 'Metashape', 'Figma', 'Siemens Jack', 'Excel', 'Cursor', 'Google Antigravity'].map(tool => (
                 <span key={tool} className="text-xs font-bold text-white bg-white/10 px-3 py-1.5 rounded-md border border-white/20 shadow-sm">{tool}</span>
               ))}
             </div>
           </motion.div>
 
           {/* FIGLIO 6: Cella Contatti */}
-          <motion.div variants={itemReveal} className="bg-neutral-900/50 border border-white/10 rounded-3xl p-6 flex flex-col justify-center transition-all duration-300 hover:scale-[1.02] hover:bg-brand-dark group cursor-pointer shadow-lg grow">
+          <motion.div variants={itemReveal} className="bg-neutral-900/50 border border-white/10 rounded-3xl p-6">
             <h3 className="font-mono text-neutral-500 uppercase tracking-widest text-xs mb-2 font-bold transition-colors group-hover:text-white/80">
               Mettiamoci in contatto
             </h3>
             <div className="flex flex-col gap-4">
               <a href="mailto:filippo.cola@edu.unife.it" className="flex items-center gap-3 text-neutral-300 transition-colors font-medium text-sm group-hover:text-white">
-                <Mail size={18} className="text-brand-primary group-hover:text-white transition-colors" /> 
+               <Mail size={18} className="text-brand-primary group-hover:text-white transition-colors" />
                 filippo.cola@edu.unife.it
               </a>
               <a href="tel:+393923408485" className="flex items-center gap-3 text-neutral-300 transition-colors font-medium text-sm group-hover:text-white">
-                <Phone size={18} className="text-brand-primary group-hover:text-white transition-colors" /> 
+                <Phone size={18} className="text-brand-primary group-hover:text-white transition-colors" />
                 (+39) 392 340 8485
               </a>
             </div>
