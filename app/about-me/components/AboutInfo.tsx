@@ -107,7 +107,7 @@ Credo fortemente che il fine ultimo dell’innovazione sia migliorare la vita de
           <motion.div variants={itemReveal} className="bg-neutral-900/50 border border-white/10 rounded-3xl p-6">
             <h3 className="font-mono text-neutral-500 uppercase tracking-widest text-xs mb-2 font-bold">Hard & Soft Skills</h3>
             <div className="flex flex-wrap gap-2">
-              {['Modellazione 3D', 'Fotogrammetria', 'Ricerca', 'Design Centrato sull\'Utente', 'Conceptual Sketching', 'Scienza dei Materiali', 'Rendering', 'Prototipazione Rapida', 'Stampa 3D', 'Ergonomia', 'Processi Produttivi', 'Basi di Coding', 'HTML', 'CSS', 'JavaScript', 'Excel'].map(skill => (
+              {['Modellazione 3D', 'Fotogrammetria', 'Ricerca', 'Design Centrato sull\'Utente', 'Conceptual Sketching', 'Scienza dei Materiali', 'Rendering', 'Prototipazione Rapida', 'Stampa 3D', 'Ergonomia', 'Processi Produttivi', 'Basi di Coding', 'HTML', 'CSS', 'JavaScript', 'Excel', 'Valutazione Economica'].map(skill => (
                 <span key={skill} className="px-3 py-1 bg-brand-primary/20 text-brand-primary border border-brand-primary/30 rounded-full text-[10px] uppercase font-mono tracking-wider">{skill}</span>
               ))}
               {['Pensiero Creativo', 'Problem Solving', 'Lavoro di Squadra', 'Precisione', 'Dedizione', 'Curiosità', 'Determinazione', 'Metodologia', 'Gestione dello Stress', 'Decisione'].map(skill => (
